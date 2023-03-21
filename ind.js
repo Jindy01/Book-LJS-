@@ -1,5 +1,78 @@
 "use strict";
 
+
+
+
+// function z (age) {
+//     if (age >= 18) {
+//         return true;
+//     } else {
+//         return confirm('Разрешение');
+//     }
+// }
+
+// let age = prompt('Какой у вас возраст?')
+
+// if (age == null || age == '') {
+//         alert('Отказано!')
+//     } else if (z (age)) {
+//         alert('Проходите');
+//     } else {
+//         alert('Недоступно');
+// } 
+
+//Доделать и понять 'значение параметров' , 'возврат значений' , 
+
+
+
+// function num(n1, n2) {
+//     return (n1 ** n2);
+// }
+
+// let res = num(2, 3);
+// console.log(res);
+
+
+
+
+// let y = 10;
+
+// // function pushTo() {
+
+// // let x = prompt('Значение больше 10');
+// //     if (x > y) {
+// //         alert('Функция сработала!')
+// //     } else if (x == null || x == '') {
+// //             alert('Нет значений!')
+// //         } else {
+// //             (x < y); {
+// //                 alert('Попробуй значение больше 10')
+// //             }                   
+// //     }
+// // }
+
+// // let c = prompt('Значение от 0 до ...')
+
+// // if (c < 10) {
+// //     pushTo();
+// // }
+
+
+
+
+// function name (n, t) {
+//     n = '*' + n + '*';
+//     alert(n + ': ' + t);
+// }
+
+// let n = 'Аня';
+
+// name (n, 'Првиет!');
+// alert(n);
+
+
+
+
 // function mesage (name, text) {
 //     name = '*' + name + '*';
 //     alert(name + ':' + text);
