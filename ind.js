@@ -1,17 +1,72 @@
 "use strict";
 
+let age = prompt('Введите возраст')
+
+function trues() {
+    return true;
+}
+
+function falses() {
+    return false;
+}
+
+function getAge (age) {
+    let check = (age >= 18) ? trues() : falses();
+    alert(check);
+}
+
+
+//ПРОДОЛЖЕНИЕ РАБОТ С ФУНКЦИЯМИ И ПАРАМЕТРАМИ ТАК ЖЕ БОЛЕЕ ПОДРОБНЕЕ РАЗОБРАТЬ ВОЗВРАТ ЗНАЧЕНИЙ !!!
+// Доделать и понять 'значение параметров' , 'возврат значений' ,!!!
+
+
+// function retur () {
+//    return;
+// }
+
+
+// let age = prompt('Возраст');
+
+// function checkAge(value) {
+//     check = (age >= 18) ? true : (age < 18) ? retur() : retur();
+// }
+
+
+// function getAge(age) {
+//     let check = (age >= 18) ? 'Взрослый' : retur() ;
+//     alert(check);
+// }   
+
+// getAge();
+
+
+
+
+// function voiid () {
+    
+// }
+
+// let alerts = 'Ян'
+
+// function mess (from, text = ' Нет значений') {
+//     alert(from + text );
+// }
+
+// mess('Аня',' привет!');
+
 
 
 
 // function z (age) {
 //     if (age >= 18) {
 //         return true;
-//     } else {
+//     } 
 //         return confirm('Разрешение');
-//     }
 // }
 
-// let age = prompt('Какой у вас возраст?')
+
+// let age = prompt('Какой у вас возраст?');
+
 
 // if (age == null || age == '') {
 //         alert('Отказано!')
@@ -19,9 +74,9 @@
 //         alert('Проходите');
 //     } else {
 //         alert('Недоступно');
-// } 
+// }
 
-//Доделать и понять 'значение параметров' , 'возврат значений' , 
+// Доделать и понять 'значение параметров' , 'возврат значений' , 
 
 
 
