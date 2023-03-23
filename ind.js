@@ -1,20 +1,21 @@
 "use strict";
 
-let age = prompt('Введите возраст')
 
 function trues() {
-    return true;
+   alert('Пользуйтесь'); 
 }
 
 function falses() {
-    return false;
+    return confirm('Родители разрешили?');
 }
 
 function getAge (age) {
+    age = prompt('Введите возраст');
     let check = (age >= 18) ? trues() : falses();
     alert(check);
 }
 
+getAge();
 
 //ПРОДОЛЖЕНИЕ РАБОТ С ФУНКЦИЯМИ И ПАРАМЕТРАМИ ТАК ЖЕ БОЛЕЕ ПОДРОБНЕЕ РАЗОБРАТЬ ВОЗВРАТ ЗНАЧЕНИЙ !!!
 // Доделать и понять 'значение параметров' , 'возврат значений' ,!!!
