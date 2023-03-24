@@ -1,24 +1,84 @@
 "use strict";
 
 
-function trues() {
-   alert('Пользуйтесь'); 
+function minX(q = 'Нет значений!') {
+
+    for (let i = 0; i < arguments.length; ++i) {
+        let x = arguments[i];
+        console.log(x);     
+   }
 }
 
-function falses() {
-    return confirm('Родители разрешили?');
-}
+minX(1,2,3,4,5,6,7,8,0);
 
-function getAge (age) {
-    age = prompt('Введите возраст');
-    let check = (age >= 18) ? trues() : falses();
-    alert(check);
-}
+//Изучить и доделать Фун. шёл 4 день ...
 
-getAge();
+
+// function getMin() {
+//     let x = Math.min(minX());
+//     console.log(x);
+// }
+
+// getMin();
+
+
+
+
+// function nin (x) {
+//     let z = Math.min(arguments[x]);
+//     console.log(z);
+// }
+
+// nin(1,2,3,4,5,6,7,8,0);
+
+// function minx() {
+//     let minValue = Math.min(arguments);
+//     console.log(minValue);
+// }
+
+// minx(1,2,3,4,5,6,7,8,0);
+
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------------//
+// function getMk (age) {
+//     age = prompt('Данные?');
+//     let check = (age >= 18) || confirm('Родители разрешили?') || alert('Нет доступа!');
+//     alert(check);
+
+// }
+
+// getMk();
+
+
+
+// function getCheck(age) {
+//     age = prompt('Возраст?')
+//     return (18 >= age) ? true : confirm('Родители разрешили?');
+// }
+
+// function getCheckMk(age) {
+//     age = prompt('Возраст?')
+//     return (age > 18) || confirm('Родители разрешили?');
+// }
+
+// getCheckMk();
+
+
+// function getAge (age) {
+//     age = prompt('Введите возраст');
+//     // let check = (age >= 18) ? alert('Пользуйтесь') : confirm('Родители разрешили?');
+//     let check = (age >= 18) ? alert('Пользуйтесь') : (age <= 18) ? confirm('Родители разрешили ?') :
+//     alert(check);
+// } 
+// getAge();
+
+//     let check = (age >= 18) ? alert('Пользуйтесь') ? (age <= 18) ? confirm('Родители разрешили ?') : (true)
 
 //ПРОДОЛЖЕНИЕ РАБОТ С ФУНКЦИЯМИ И ПАРАМЕТРАМИ ТАК ЖЕ БОЛЕЕ ПОДРОБНЕЕ РАЗОБРАТЬ ВОЗВРАТ ЗНАЧЕНИЙ !!!
 // Доделать и понять 'значение параметров' , 'возврат значений' ,!!!
+//----------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+
 
 
 // function retur () {
@@ -416,7 +476,7 @@ getAge();
 // let login;
 // login = prompt('Логин ?');  
 
-// let =    result  =   (login == 'Сотрудник') ? 'Hello!':
+// let =    result  =   (login == 'Сотрудник') ? 'Hello!':  
 //         (login == 'Директор')  ? 'Hellos!':
 //         (login == 'Начальник') ? 'Helloss!':
 //         (login == 'Служащий')  ? 'Hellosss!':'Неверный логин!';
