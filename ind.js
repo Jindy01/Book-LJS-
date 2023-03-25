@@ -1,17 +1,112 @@
 "use strict";
 
 
-function minX(q = 'Нет значений!') {
 
-    for (let i = 0; i < arguments.length; ++i) {
-        let x = arguments[i];
-        console.log(x);     
-   }
-}
 
-minX(1,2,3,4,5,6,7,8,0);
+// givQw();
 
-//Изучить и доделать Фун. шёл 4 день ...
+// function givQw() {
+//     let x = prompt('Возраст ?');
+//     if (x >= 18) {
+//         alert('Добро пожаловать!');
+//     } else if (x < 18) {
+//         alert('Вам ещё нельзя сюда!');
+//     }
+// }
+
+// function getLvl();
+
+
+
+// function minNum(nunu) {
+//     for (let i = 0; i < arguments; i++) {
+//         i = arguments;
+//         console.log(i);
+//         console.log(Math.min(i));
+//     }
+// }
+
+
+// minNum(1,2,3,4,5,6,7,8,9);
+
+// function checkNum() {
+//     let x = minNum();
+//     x = Math.min(x);
+//     console.log(x);
+// }
+
+// checkNum(1,2,3,4,5,6);
+
+
+
+
+    //  Function 'CallBack'     //
+// function ask (qw, yes, no) {
+//     if (confirm(qw)) {
+//         yes();
+//     } else {
+//         no();
+//     }
+// }
+
+// ask('Согласны?',
+//     function() {alert('Вы согласились'); },
+//     function() {alert('Вы отказались'); }
+// )
+
+
+
+// function coppy() {
+//     alert('Привет!');
+// }
+
+// let geting = coppy;
+// geting();
+
+
+// let getNum = prompt('Введите число');
+// let getNumTwo = prompt('Введите степень');
+
+// function getDegree() {
+//     let degree = getNum ** getNumTwo; 
+//     if (degree > 0) {
+//         return degree;
+//     }
+// }
+
+
+
+// alert(getDegree());
+
+// function min(a,b) {
+//     if (a < b) {
+//         return a;
+//     } else {
+//         return b;
+//     }
+// }
+
+// alert(min(5, 8));
+
+
+// function minX(q, w, e, r, t, y, u, i) {
+//     let x = Math.min(q, w, e, r, t, y, u, i );
+//     console.log(x);
+// }
+
+// minX(1,2,0,4,5,6,7,8,0);
+
+// function minNum(z) {
+//     let x = Object.values(z);
+//     return Math.min.apply(null, x);
+// }
+
+// let nin = (1,2,0,4,5,6,7,8,0);
+// let nfn = minNum(nin);
+// console.log(nfn);
+
+
+//Изучить и доделать Фун. шёл 5 день ...
 
 
 // function getMin() {
@@ -23,7 +118,7 @@ minX(1,2,3,4,5,6,7,8,0);
 
 
 
-
+// Псевдо массив //
 // function nin (x) {
 //     let z = Math.min(arguments[x]);
 //     console.log(z);
@@ -39,6 +134,8 @@ minX(1,2,3,4,5,6,7,8,0);
 // minx(1,2,3,4,5,6,7,8,0);
 
 
+
+
 //----------------------------------------------------------------------------------------------------------------------------------------------------------//
 // function getMk (age) {
 //     age = prompt('Данные?');
@@ -48,6 +145,7 @@ minX(1,2,3,4,5,6,7,8,0);
 // }
 
 // getMk();
+
 
 
 
