@@ -1,11 +1,40 @@
-"use strict";
+'use strict';
 
-let x = (a, b) => (a + b);
+let gits = prompt('Диапазон 1');
 
-console.log(x(2, 6));
+for(let i = 0; i <= gits; ++i) {
+    if (gits > 1000) {
+       return alert('Это много');   //  Исправить  // 
+    } else {
+        console.log(i);
+    }
+}
+
+
+
+// let arg = (qw,yes,no) => {
+//     if (confirm(qw)) {
+//         yes();
+//     } else {
+//         no();
+//     }
+// }
+
+// arg('Вы согласны?', 
+// function() {alert('Вы согласились')} ,
+// function() {alert('Вы отказались')} );
+
+
+
+
+// let x = (a, b) => (a + b);
+
+// console.log(x(2, 6));
+
 
 
 //   Срелочные функции доизучать и понять основное устройство , и их работу  //
+
 
 
 // let git = (a, b) => a + b;
