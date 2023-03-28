@@ -1,14 +1,29 @@
 'use strict';
 
+
+
+
 let gits = prompt('Диапазон 1');
 
-for(let i = 0; i <= gits; ++i) {
-    if (gits > 1000) {
-       return alert('Это много');   //  Исправить  // 
-    } else {
-        console.log(i);
+if (gits > 1000) {
+    alert('Это много!')
+} else {
+    (gits < 1000) ; {
+        for (let i = 0; i <= gits; ++i) {
+            console.log(i);
+        }
     }
 }
+
+
+
+// for (let i = 0; i <= gits; ++i) {
+//     if (gits > 1000) { return ;   //  Исправить  // 
+//     } else {
+//         console.log(i);
+//     }
+// }
+
 
 
 
