@@ -1,22 +1,44 @@
 'use strict';
 
 
-
-function showPrimes(n) {
-    for (let i = 2; i < n; ++i) {
-        if (isPrime(i)) continue;
-        alert(i);
+function getMinNumber(number) {
+    for (let i = 0; i < arguments.length; i++) {
+        let  x = arguments.length;
+        console.log(x);
     }
+    console.log(number);
 }
 
-function isPrime(n) {
-    for (let i = 2; i < n; ++i) {
-        if (n % i == 0) return true;
-    }
-    return false;
-}
+getMinNumber(1,2,3,4,5,6,7,8,9,0);
 
-showPrimes(19);
+
+// function checkNum() {
+//     let x = minNum();
+//     x = Math.min(x);
+//     console.log(x);
+// }
+
+// checkNum(1,2,3,4,5,6);
+
+
+
+
+
+// function showPrimes(n) {
+//     for (let i = 2; i < n; ++i) {
+//         if (isPrime(i)) continue;
+//         alert(i);
+//     }
+// }
+
+// function isPrime(n) {
+//     for (let i = 2; i < n; ++i) {
+//         if (n % i == 0) return true;
+//     }
+//     return false;
+// }
+
+// showPrimes(19);
 
 
 
