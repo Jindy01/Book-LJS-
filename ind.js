@@ -1,15 +1,238 @@
 'use strict';
 
-
-function getMinNumber(number) {
-    for (let i = 0; i < arguments.length; i++) {
-        let  x = arguments.length;
-        console.log(x);
-    }
-    console.log(number);
+//      ДОДЕЛАТЬ ЗАДАНИЕ И ПОНЯТЬ АЛГОРИТМ КЛЮЧЕЙ       //
+let sumMoney = {
+    Joon: 100,
+    Himo: 160,
+    Tomi: 130,
 }
 
-getMinNumber(1,2,3,4,5,6,7,8,9,0);
+for (let key in sumMoney) {
+    let sim = (sumMoney[key]);
+    let go = sum(sim);
+    console.log(go);
+
+}
+//      ДОДЕЛАТЬ ЗАДАНИЕ И ПОНЯТЬ АЛГОРИТМ КЛЮЧЕЙ       //
+
+// let schebule = {};
+
+// function isEmpty(obj) {
+//     for (let key in obj) {
+//         // если тело цикла начнет выполняться - значит в объекте есть свойства
+//         return false;
+//       }
+//       return true;
+
+//     // console.log(`${'age' in obj} + '1-я'`);
+//     // console.log(`${obj.age === undefined} + '2-я консоль' `);
+    
+// //     if (obj > 0) return true;
+// // } else if (obj < 0) {
+// //     return false;
+// }
+
+// isEmpty(schebule);
+
+// schebule.age = 30;
+
+// isEmpty(schebule);
+
+
+
+// let txt = {
+//     names: 'fog',
+//     age: 213,
+// }
+
+// for (let key in txt) {
+//     alert(txt[key]);
+// }
+
+// let box = {};
+// box.name = 'John';
+// box.surname = 'Smith';
+// box.name = 'Pete';
+// delete box.name;
+
+// console.log(box);
+
+
+
+// let user = {
+//     name: 'artem',
+//     age: 19,
+//     likeTea: true,
+// };
+
+// for (let key in user) {
+//     console.log(key);
+//     console.log(user[key]);
+// }
+
+// function user (name, age) {
+//     return {
+//         name,
+//         age,
+//     };
+// }
+
+// user('Moea', 30);
+
+
+
+
+// let user = prompt('Ваше имя?');
+// let pass;
+// let bag = {};
+
+// if (user == 'артём') {
+//     pass = prompt('Пароль?');  
+// } else if (user != 'артём') {
+//     alert('Вы не сотрудник!');
+// };
+
+// if (user == 'артём') {
+//     bag.user = 'артём';
+// };
+
+// if (pass == 5682) {
+//     bag.pass = true;
+// } else if (pass != 5682) {
+//     bag.pass = false;
+// };
+
+// console.log(bag);
+
+
+
+
+// function makeUser(name, age) {
+//     return {
+//         name: name,
+//         age: age,
+//     };
+// }
+
+// let user = makeUser('Artem', 19);
+
+// console.log(user);
+// console.log(user.name + ' это база');
+
+
+
+
+// let fruit = 'aplle';
+// let bag = {
+//     [fruit + 'Comp']: 5 ,
+// };
+
+// console.log(bag);
+
+// let fruits = prompt('Любимый фрукт?');
+
+// let box = {
+//     [fruits]: true,
+// }
+
+// console.log(box);
+
+
+//      Объекты     //
+// let names = prompt('Имя?','Name');
+// let key = 'https';
+// let user = {
+//     name:'Тёма',
+//     age:18 ,
+//     'likes Birds': true,
+// };
+
+
+// user.isADM = true;
+// delete user.age;
+
+// user['Likes Boom!'] = true;
+// user['meth'] = 24;
+// user[key] = 18;
+// user[names] = true;
+
+// console.log(user);
+
+
+
+// function searchMinNumber (x) {
+//     new arguments = c;
+//     x = Number();
+//     console.log(Number(arguments.array));
+// }
+  
+// searchMinNumber(9,2,3,7);
+
+
+
+// function getMinNumber(number) {
+//     for (let i = 0; i < arguments.length; i++) {
+//         let  x = arguments.length;
+//         console.log([x]);
+//     }
+//     console.log(number);
+// }
+
+// getMinNumber(1,2,3,4,5,6,7,8,9,0);
+
+
+
+
+// function nn () {
+//     let x = prompt('Числа!');
+//     let z = prompt('Числа!');
+
+//     if (x < z) {
+//         alert(`${z} самое большое`);
+//     } else if (x > z) {
+//         alert(`${x} самое большое`);
+//     }
+// }
+
+// nn();
+
+
+
+// let x = getNum(); ---- Разработка !ы
+
+// function getNum() {
+//     let minNumber = prompt('Введите числа');
+//     for (let i = 5; i > arguments.length; ++i) {
+        
+//     }
+//     return minNumber;
+// }
+
+// if ()
+
+// console.log(x);
+
+
+
+
+// for(; length.x < 5; ++x) {
+//     alert('Ещё')
+// }
+    
+
+
+
+//      Доделать концепцию      //
+
+// function getMinNumber(number) {
+//     for (let i = 0; i < arguments.length; i++) {
+//         let  x = arguments.length;
+//         console.log(x);
+//     }
+//     console.log(number);
+// }
+
+// getMinNumber(1,2,3,4,5,6,7,8,9,0);
 
 
 // function checkNum() {
@@ -20,7 +243,7 @@ getMinNumber(1,2,3,4,5,6,7,8,9,0);
 
 // checkNum(1,2,3,4,5,6);
 
-
+//!
 
 
 
@@ -121,7 +344,7 @@ getMinNumber(1,2,3,4,5,6,7,8,9,0);
 //     }
 // }
 
-// arg('Вы согласны?', 
+// arg ('Вы согласны?', 
 // function() {alert('Вы согласились')} ,
 // function() {alert('Вы отказались')} );
 
