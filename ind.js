@@ -3,6 +3,94 @@
 
 
 
+//      ДОИЗУЧАТЬ И ПОНЯТЬ АЛГОРИТМ     //
+function marry(man, woman) {
+    woman.husbend = man;
+    man.wife = woman;
+
+    return {
+        father: man,
+        mother: woman,
+    }
+}
+
+let family = marry({
+    name: 'Jon' 
+}, {
+    name: 'Joya' 
+});
+
+console.log(family);
+
+
+
+// let arry = [
+//     2,3,4,5,1,2,7,5,4,3,8,13,21,34,21,16,10
+// ];
+
+// let box = 0;
+
+// for (let key in arry) {
+//     box = arry[key];
+//     if (box % 2 == 0) {
+//         alert(`${box} чётное`);
+//     } else if (box % 2 == 1) {
+//         alert(`${box} нечётное`);
+//     }
+
+
+
+// let user = {
+//     name: 'Artem',
+//     data: {
+//         height: 178,
+//         mass: 67,
+//     }
+// };
+
+// let clone = Object.assign({}, user);
+
+// console.log(clone);
+// user.name = 'Pate';
+// console.log(user);
+
+
+
+// let newUser = { name: 'Poo', age: 18, };
+// let clone = Object.assign({}, newUser);
+
+// console.log(clone);
+
+
+
+// let user = {
+//     name: 'Jony',
+// };
+
+// let copy  = { canViev: true , canClone: false };
+// let clone = { canEgit: true };
+
+// Object.assign(user, copy, clone);
+// console.log(user);
+
+
+
+// let obj = {
+//     z: 45,
+//     x: 35,
+//     c: 85,
+// };
+// let clone = {};
+
+// for(let key in obj) {
+//     clone[key] = obj[key];
+// }
+
+// console.log(clone);
+// console.log(obj);
+
+
+
 //----------------------------------------------------------------------------------------------------------------------------------------------------------//
 // let menu = {
 //     width: 200,
@@ -40,7 +128,6 @@
 
 
 
-
 // let obj = {
 //     num1: 10,
 //     num2: 20,
@@ -57,7 +144,6 @@
 //    sum += numArr[i];
 //   console.log(sum + ' Сумма');
 // }
-
 
 
 
