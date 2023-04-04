@@ -1,26 +1,132 @@
 'use strict';
 
+function makeUser() {
+  return {
+    name: "John",
+    ref () { return this } 
+  }; 
+}
+
+let user = makeUser();
+
+alert( user.ref().name ); // Каким будет результат?
+console.log(user);
+
+
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------------//
+// let user = {};
+
+// function getInformation() {
+
+//     let name = prompt('Имя?'); 
+//     if (name == null) {
+//         user.name = 'Не введено';
+//     } else {
+//         user.name = name;
+//     }
+
+//     let surname = prompt('Фамилия?');
+//     if (surname == null) {
+//         user.surname = 'Не введено';
+//     } else {
+//         user.surname = surname;
+//     }         
+
+//     let age = prompt('Возраст?');
+//     if (age == null) {
+//         user.age = 'Не введено';
+//     } else {
+//         user.age = age;
+//     }  
+
+//     let work = prompt('Работа?');
+//     if (work == null) {
+//         user.work = 'Не введено';
+//     } else {
+//         user.work = work;
+//     }  
+// }
+
+// getInformation();
+// console.log(user);
+//----------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+
+
+// name = prompt('Как вас зовут ?')
+// let x = (name) => {
+//     if (name == null) {
+//         alert('А имя?');
+//     } else {
+//         alert(`${name} привет!`);
+//     }
+// };
+
+// x(name);
+
+
+
+// let arry = { user: 'Homa', getArry:
+
+//     function() {
+//         alert(`${this.user} Привет!`);
+//     } 
+// }
+
+// arry.getArry();
+
+
+
+// let user = { name: 'Jo' };
+// let adm  = { name: 'ADM'};
+
+// function sayHi() {
+//     alert( this.name );
+// }
+
+// user.f = sayHi;
+// adm.f = sayHi;
+
+// user.f();
+// adm.f();
+// adm['f']();
+
+
+
+// let user = {
+//     name: 'Jony',
+//     age: 20,
+//     seyHi() {
+//         alert(this.name);
+//     }
+
+// };  
+
+// user.seyHi();
+// console.log(user);
 
 
 
 //      ДОИЗУЧАТЬ И ПОНЯТЬ АЛГОРИТМ     //
-function marry(man, woman) {
-    woman.husbend = man;
-    man.wife = woman;
+// function marry(man, woman) {
+//     woman.husbend = man;
+//     man.wife = woman;
 
-    return {
-        father: man,
-        mother: woman,
-    }
-}
+//     return {
+//         father: man,
+//         mother: woman,
+//     }
+// }
 
-let family = marry({
-    name: 'Jon' 
-}, {
-    name: 'Joya' 
-});
+// let family = marry({
+//     name: 'Jon' 
+// }, {
+//     name: 'Joya' 
+// });
 
-console.log(family);
+// console.log(family);
+//      ДОИЗУЧАТЬ И ПОНЯТЬ АЛГОРИТМ     //
 
 
 
