@@ -1,16 +1,134 @@
 'use strict';
 
-function makeUser() {
-  return {
-    name: "John",
-    ref () { return this } 
-  }; 
-}
+let ladder = {
+  step: 0,
+  up() {
+    this.step++;
+    return this;
+  },
+  down() {
+    this.step--;
+    return this;
+  },
+  showStep: function() { // показывает текущую ступеньку
+    alert( this.step );
+    return this;
+  }
+};
 
-let user = makeUser();
+ladder.up().up().up().up().up().up().up().down().showStep().down().showStep();
 
-alert( user.ref().name ); // Каким будет результат?
-console.log(user);
+
+
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------------//
+// let numberOne = prompt('Первое число');
+// let numberTwo = prompt('Второе число');
+// let sum = 0;
+// let mul = 0;
+
+// let calculator = {
+
+//   read() {  
+//     if (numberOne == Number(numberOne)) {
+//       this.numberOne = numberOne;
+//     } else {
+//         return alert('Неверный тип данных #1');
+//     }
+
+//     if (numberTwo == Number(numberTwo)) {
+//       this.numberTwo = numberTwo;
+//     } else {
+//         alert('Неверный тип данных #2');
+//     }
+//   },
+
+//   sum() {
+//     sum = +numberOne + +numberTwo;    
+//     console.log(`${sum} сумма`);
+//     return sum;
+//   },
+
+//   mul() {
+//     mul = numberOne * numberTwo;    
+//     console.log(`${mul} перемноженное`);
+//     return mul;
+//   },
+// };
+
+// calculator.read();
+// alert( calculator.sum() + ' сумма' );
+// alert( calculator.mul() + ' перемноженное');
+//----------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+
+
+// let numberOne = prompt('Первое число');
+// let numberTwo = prompt('Второе число');
+// let sum = 0;
+// let mul = 0;
+// let storage = {};
+
+// let calculator = {
+
+//   read() {  
+//     if (numberOne == Number(numberOne)) {
+//       storage.numberOne = numberOne;
+//     } else {
+//         return alert('Неверный тип данных #1');
+//     }
+
+//     if (numberTwo == Number(numberTwo)) {
+//       storage.numberTwo = numberTwo;
+//     } else {
+//         alert('Неверный тип данных #2');
+//     }
+//   },
+
+//   sum() {
+//     sum = +numberOne + +numberTwo;    
+//     console.log(`${sum} сумма`);
+//   },
+
+//   mul() {
+//     mul = +numberOne * +numberTwo;    
+//     console.log(`${mul} перемноженное`);
+//   }
+// };
+
+// calculator.read();
+// alert( storage.sum() );
+// alert( storage.mul() );
+
+
+
+
+// if (numberOne != Number(numberOne)) {
+//   alert('123');
+// }
+
+
+
+// let user = {
+//   name: 'Kofe',
+//   say () { return this }
+// };
+
+// alert(user.say().name);
+
+
+
+// function makeUser() {
+//   return {
+//     name: "John",
+//     ref () { return this } 
+//   }; 
+// }
+
+// let user = makeUser();
+
+// alert( user.ref().name );
+// console.log(user);
 
 
 
