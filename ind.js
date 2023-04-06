@@ -1,23 +1,128 @@
 'use strict';
 
-let ladder = {
-  step: 0,
-  up() {
-    this.step++;
-    return this;
-  },
-  down() {
-    this.step--;
-    return this;
-  },
-  showStep: function() { // показывает текущую ступеньку
-    alert( this.step );
-    return this;
-  }
-};
+``
 
-ladder.up().up().up().up().up().up().up().down().showStep().down().showStep();
 
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------------//
+// function Calculator() {
+
+//     this.read = function read() {
+
+//         let numOne = prompt('FirstNumber?', 0);
+//         this.numOne = numOne;
+        
+//         let numTwo = prompt('SecondNumber?', 0);
+//         this.numTwo = numTwo;
+//     };
+
+//     this.sum = function() {
+//         return this.sum = +this.numOne + +this.numTwo;
+//     };
+
+//     this.mul = function() {
+//         return this.mul = this.numOne * this.numTwo;
+//     };
+// }
+
+
+// let calculator = new Calculator();
+// calculator.read();
+
+// alert( "Sum = " + calculator.sum() );
+// alert( "Mul = " + calculator.mul() );
+//----------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+
+
+// function User(name) {
+//   this.name = name;
+  
+//     this.sayHi = function() {
+//       alert( "Меня зовут: " + name );
+//     };
+//   }
+  
+//   let john = new User("John");
+  
+// john.sayHi();
+// console.log(john);
+
+
+
+// let newObj = {};
+
+// function Box(name, age) {
+//     this.name = name;
+//     this.age = age;
+//     return newObj;
+// }
+
+// function Alert(names, ages) {
+//     this.names = names;
+//     this.ages = ages;
+//     return newObj;
+// }
+
+// newObj = new Alert('joo', 43);
+// newObj = new Box('Mio', 28);
+
+// console.log(newObj);
+// console.log(new Box() == new Alert());
+
+
+
+// function User (name) {
+//     if (!new.target) {
+//         return  new User(name);
+//     }
+//     this.name = name;
+// }
+
+// let jo_jo = User('Jo Jo');
+
+// console.log(jo_jo);
+
+
+
+// let user = new function() {
+//     this.name = 'Keti';
+//     this.adm = false;
+// };
+
+// console.log(user);
+
+
+
+// function Box (name) {
+//     this.name = name;
+//     this.isAdmin = false;
+// }
+
+// let user = new Box('Jack');
+// let newUser = new Box('Jona');
+
+// console.log(user, newUser);
+
+
+
+// let ladder = {
+//   step: 0,
+//   up() {
+//     this.step++;
+//     return this;
+//   },
+//   down() {
+//     this.step--;
+//     return this;
+//   },
+//   showStep: function() { // показывает текущую ступеньку
+//     alert( this.step );
+//     return this;
+//   }
+// };
+
+// ladder.up().up().up().up().up().up().up().down().showStep().down().showStep();
 
 
 
