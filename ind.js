@@ -1,13 +1,43 @@
 'use strict';
 
-``
+let key = 'name';
+
+let user = {
+    name: 'Nony',
+    data: {
+        contry: 'Gomel',
+        state: 'Belarus',
+    }
+};
+
+console.log(user);
+
+let clone = Object.assign({}, user);
+console.log(clone);
+
+
+
+// function Accumulator(startingValue) {
+
+//     this.value = startingValue;
+
+//     this.read = function() {
+//         this.value += +prompt('Number?', 0);
+//     }
+// }
+
+// let accumulator = new Accumulator(4);
+
+// accumulator.read();
+// accumulator.read();
+// console.log(accumulator.value);
 
 
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------------//
 // function Calculator() {
 
-//     this.read = function read() {
+//     this.read = function() {
 
 //         let numOne = prompt('FirstNumber?', 0);
 //         this.numOne = numOne;
@@ -579,7 +609,6 @@
 
 
 
-
 // let user = prompt('Ваше имя?');
 // let pass;
 // let bag = {};
@@ -604,7 +633,6 @@
 
 
 
-
 // function makeUser(name, age) {
 //     return {
 //         name: name,
@@ -616,7 +644,6 @@
 
 // console.log(user);
 // console.log(user.name + ' это база');
-
 
 
 
