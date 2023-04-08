@@ -1,19 +1,81 @@
 'use strict';
 
-let key = 'name';
+let ids = Symbol('ids');
 
 let user = {
-    name: 'Nony',
-    data: {
-        contry: 'Gomel',
-        state: 'Belarus',
-    }
+    name: 'Foo',
+    country: 'Gomel',
+    [ids]: 8241952,
 };
 
-console.log(user);
+function niceChek(value) {
+    for (let key in value) {
+        console.log(value[key]);
+    }
+}
 
-let clone = Object.assign({}, user);
-console.log(clone);
+niceChek(user);
+
+
+
+// let sum = Symbol.for('id');
+// let sim = Symbol('id')
+
+// function chekSymbol (value) {
+//     let check =  (Symbol.keyFor(value));
+
+//     {
+//         if (check == undefined) {
+//             alert(`Symbol не глобальный`);
+//         } else {
+//             alert(`Symbol глобальный`);
+//         }
+//     }
+// }
+
+// chekSymbol(sim);
+// console.log(sim);
+
+
+
+// let sumb = Symbol.for('id');
+// let sum = Symbol.for('ip');
+// let mus = Symbol.for('ip');
+// alert(sum == mus);
+
+
+
+// let user = {
+//     name: 'Foba',
+// };
+
+// let id = Symbol.for('id');
+// user[id] = 1;
+
+// let ids = Symbol.for('id');
+
+// console.log(id);
+// console.log(ids);
+// console.log(id === ids);
+
+
+
+//.?        ОПЦИОНАЛЬНАЯ ЦЕПОЧКА        //
+
+// let key = 'name';
+
+// let user = {
+//     name: 'Nony',
+//     data: {
+//         contry: 'Gomel',
+//         state: 'Belarus',
+//     }
+// };
+
+// console.log(user);
+
+// let clone = Object.assign({}, user);
+// console.log(clone);
 
 
 
@@ -707,7 +769,6 @@ console.log(clone);
 
 
 
-
 // function nn () {
 //     let x = prompt('Числа!');
 //     let z = prompt('Числа!');
@@ -723,7 +784,7 @@ console.log(clone);
 
 
 
-// let x = getNum(); ---- Разработка !ы
+// let x = getNum(); ---- Разработка !
 
 // function getNum() {
 //     let minNumber = prompt('Введите числа');
