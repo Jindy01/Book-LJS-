@@ -1,20 +1,36 @@
 'use strict';
 
-let ids = Symbol('ids');
-
-let user = {
-    name: 'Foo',
-    country: 'Gomel',
-    [ids]: 8241952,
+let obj = {
+    name: 'Jove',
+    money: 800 ,
+    [Symbol.toPrimitive](hint) {
+        alert(`hint ${hint}`);
+        return hint == 'String' ?   `{name: '${this.name}' }` : this.money;
+    }
 };
 
-function niceChek(value) {
-    for (let key in value) {
-        console.log(value[key]);
-    }
-}
+alert(obj);
+alert(+obj);
+alert(obj + 500);
+ 
 
-niceChek(user);
+
+
+// let ids = Symbol('ids');
+
+// let user = {
+//     name: 'Foo',
+//     country: 'Gomel',
+//     [ids]: 8241952,
+// };
+
+// function niceChek(value) {
+//     for (let key in value) {
+//         console.log(value[key]);
+//     }
+// }
+
+// niceChek(user);
 
 
 
