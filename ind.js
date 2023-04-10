@@ -1,19 +1,73 @@
 'use strict';
 
-let obj = {
-    name: 'Jove',
-    money: 800 ,
-    [Symbol.toPrimitive](hint) {
-        alert(`hint ${hint}`);
-        return hint == 'String' ?   `{name: '${this.name}' }` : this.money;
+
+
+let test = {
+    name: 'Hoo',
+    number: 421,
+
+    toString () {
+        return this.name;
+    },
+
+    valueOf () {
+        return this.number;
     }
+    
 };
 
-alert(obj);
-alert(+obj);
-alert(obj + 500);
- 
+console.log(test);
+console.log(test + 500);
+console.log(+test);
 
+
+
+
+// let user = {
+//     name: 'Jony',
+//     money: 700,
+
+// toString() {
+//     return `{name: "${this.name}"}`;
+// },
+
+//     valueOf() {
+//         return this.money;
+//     }
+// };  
+
+// alert(user);
+// alert(+user);
+// alert(user + 500);
+
+
+
+// let id = Symbol('id')
+
+// let user = {
+//     name: 'Joy',
+//     [id]: 25
+// }
+
+// alert(user);
+// alert(id.valueOf() === id );
+
+
+
+// let user = {
+//     name: 'Jove',
+//     money: 800 ,
+
+//     [Symbol.toPrimitive](hint) {
+//         alert(`hint: ${hint}`);
+//         return (hint == 'string') ? `{name: "${this.name}" }` : this.money;
+//     }
+// };
+
+// alert(user);
+// alert(+user);
+// alert(user + 500);
+ 
 
 
 // let ids = Symbol('ids');
