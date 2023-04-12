@@ -2,23 +2,38 @@
 
 
 
-let test = {
-    name: 'Hoo',
-    number: 421,
+let x = 0;
 
-    toString () {
-        return this.name;
-    },
-
-    valueOf () {
-        return this.number;
+for (; x === 'number';) {
+    if (x == NaN) {
+        break;
+    } else {
+        x += +prompt('Ещё', 0); 
     }
-    
-};
 
-console.log(test);
-console.log(test + 500);
-console.log(+test);
+    console.log(x);
+
+}
+
+
+
+// let test = {
+//     name: 'Hoo',
+//     number: 421,
+
+//     toString () {
+//         return this.name;
+//     },
+
+//     valueOf () {
+//         return this.number;
+//     }
+    
+// };
+
+// console.log(test);
+// console.log(test + 500);
+// console.log(+test);
 
 
 
