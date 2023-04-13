@@ -1,19 +1,20 @@
 'use strict';
 
+let x = 10;
+
+console.log(x);
 
 
-let x = 0;
+// let x = 0;
 
-for (; x === 'number';) {
-    if (x == NaN) {
-        break;
-    } else {
-        x += +prompt('Ещё', 0); 
-    }
+// for (;x == Number(x);) {
+//     x += +prompt('Ещё');
+//     if (x == NaN) {
+//         break;
+//     }
 
-    console.log(x);
-
-}
+//     console.log(x);
+// }
 
 
 
@@ -34,7 +35,6 @@ for (; x === 'number';) {
 // console.log(test);
 // console.log(test + 500);
 // console.log(+test);
-
 
 
 
