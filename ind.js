@@ -1,8 +1,77 @@
 'use strict';
 
-let x = 10;
+// alert (1.35.toFixed(1));
+alert(Math.ceil(6.35));
 
-console.log(x);
+
+
+// let x = +prompt('', 0);
+// let z = +prompt('', 0);
+
+// alert(x + z);
+
+
+
+// let x = 0;
+
+// for (;x == Number(x);) {
+//     x += +prompt('Число');
+//     if (!isFinite(x)) {
+//         break;
+//     } 
+
+//     console.log(x);
+// }
+
+
+
+// let x = 2.331;
+
+// console.log(typeof (x.toFixed(2)));
+
+// console.log(9999999999999999);
+
+
+
+// let num = 2.5;
+
+// console.log(Math.round(num));
+// console.log(Math.ceil(num));
+// console.log(Math.trunc(num));
+// console.log(Math.floor(num));
+
+
+
+// let num = 2.2312421234;
+
+// console.log(num.toFixed(1));
+
+
+
+// let x = {
+//     name: 'Foya',
+//     say: function () {
+//         alert(`Привет ${x.name}`);
+//     },
+// };
+
+// x.say();
+
+
+
+// let sum = 0;
+
+// while(true) {
+//     let a = 0;
+
+//     a = +prompt('Число');
+
+//     if (!a)  break;
+//     sum += a;
+// }
+
+// console.log(sum);
+
 
 
 // let x = 0;
