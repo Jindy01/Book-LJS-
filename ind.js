@@ -2,6 +2,71 @@
 
 
 
+//      Доделать "СВОБОДНЫЙ КОД!!"      //
+// let x = {};
+
+// function getDiscord() {
+
+//     let input = prompt('Дискорд?', 'Nick & #?');
+    
+// }
+
+
+// for (let key in x) {
+//     console.log(x[key]);
+// }
+// getDiscord();
+// getDiscord();
+// console.log(x);
+    ///                                            ///
+
+
+
+
+// let x = 'Home - it`s not Mall';
+// let z = 'it`s';
+
+// console.log(x.includes(z));
+
+
+
+// let str = 'Text - is my Name';
+
+// if ( ~str.indexOf('is') ) {
+//     alert('Есть совпадение');
+// }
+
+
+
+// let text = ' Hello , My name "Joon" ' ;
+
+// console.log(text.toUpperCase());
+// console.log(text.toLowerCase());
+
+
+
+// let str = 'Hello';
+
+// str = 'h' + str[1];
+
+// console.log(str);
+
+
+
+// for (let str of 'Helos!') {
+//     console.log(str);
+// }
+
+
+
+// let str = 'HELLO!';
+
+// console.log(str[0]);
+// console.log(str.at(2));
+
+// console.log(str[str.length - 1]);
+// console.log(str.at(-2));
+
 
 
 // function NumberRend (min, max) {
