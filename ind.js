@@ -1,15 +1,75 @@
 'use strict';
 
+// let test = 'Вот, что мне хотелось бы сказать на эту тему:';
+
+// console.log(test.length);
 
 
-//      Доделать "СВОБОДНЫЙ КОД!!"      //
+
+function truncate (srt, maxlenght) {
+
+    let desuce = '…';
+    let result = 0;
+
+    if (srt.length > maxlenght) {
+        result = srt.slice(0, maxlenght - 1);
+            result = result + desuce;
+        console.log(result);
+    } else {
+        console.log(srt);
+    }
+
+}
+
+truncate("Вот, что мне хотелось бы сказать на эту тему:", 20);
+truncate("Всем привет!", 20);
+
+
+
+
+// function checkSpam(string) {
+
+//     let check = string.toLowerCase();
+//     return check = check.includes('viagra') || check.includes('xxx');
+
+// }   
+
+// alert( checkSpam('buy ViAgRA now') );
+// alert( checkSpam('free xxxxx') );
+// alert( checkSpam("innocent rabbit") );
+
+
+
+// function ucFirst(str) {
+//     if (!str) return str;
+
+//     let getName = str[0].toUpperCase() + str.slice(1);
+
+//     console.log(getName);
+
+// }
+
+// ucFirst('иван');
+
+
+
+// let x = 'Text in interested';
+
+// console.log(x.slice(-1));
+// console.log(x.substring(5, 7));
+
+
+
+    //  Доделать "СВОБОДНЫЙ КОД!!"      //
+
 // let x = {};
 
 // function getDiscord() {
 
 //     let input = prompt('Дискорд?', 'Nick & #?');
-    
+//     x.
 // }
+
 
 
 // for (let key in x) {
@@ -18,8 +78,6 @@
 // getDiscord();
 // getDiscord();
 // console.log(x);
-    ///                                            ///
-
 
 
 
