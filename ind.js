@@ -1,28 +1,38 @@
 'use strict';
 
-// let test = 'Вот, что мне хотелось бы сказать на эту тему:';
+function extractCurrencyValue (str) {
 
+    let result = +str.substr(1);
+
+    console.log(result);
+    return result;
+}
+
+alert( extractCurrencyValue('$120') === 120);
+
+
+// let test = 'Вот, что мне хотелось бы сказать на эту тему:';
 // console.log(test.length);
 
 
 
-function truncate (srt, maxlenght) {
+// function truncate (srt, maxlenght) {
 
-    let desuce = '…';
-    let result = 0;
+//     let desuce = '…';
+//     let result = 0;
 
-    if (srt.length > maxlenght) {
-        result = srt.slice(0, maxlenght - 1);
-            result = result + desuce;
-        console.log(result);
-    } else {
-        console.log(srt);
-    }
+//     if (srt.length > maxlenght) {
+//         result = srt.slice(0, maxlenght - 1);
+//             result = result + desuce;
+//         console.log(result);
+//     } else {
+//         console.log(srt);
+//     }
 
-}
+// }
 
-truncate("Вот, что мне хотелось бы сказать на эту тему:", 20);
-truncate("Всем привет!", 20);
+// truncate("Вот, что мне хотелось бы сказать на эту тему:", 20);
+// truncate("Всем привет!", 20);
 
 
 
@@ -60,7 +70,7 @@ truncate("Всем привет!", 20);
 
 
 
-    //  Доделать "СВОБОДНЫЙ КОД!!"      //
+//  Доделать "СВОБОДНЫЙ КОД!!"      //
 
 // let x = {};
 
