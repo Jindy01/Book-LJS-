@@ -1,14 +1,40 @@
 'use strict';
 
-function extractCurrencyValue (str) {
 
-    let result = +str.substr(1);
 
-    console.log(result);
-    return result;
-}
 
-alert( extractCurrencyValue('$120') === 120);
+
+
+// let x = [
+//     'Номер',
+//     'Цифра',
+//     'Строка',
+// ];
+
+// x.push('Привет');
+
+// console.log(x);
+
+
+
+// let arry = [
+//     'String',
+//     'Number',
+// ];
+
+// console.log(arry.at(-1));
+
+
+
+// function extractCurrencyValue (str) {
+
+//     let result = +str.substr(1);
+
+//     console.log(result);
+//     return result;
+// }
+
+// alert( extractCurrencyValue('$120') === 120);
 
 
 // let test = 'Вот, что мне хотелось бы сказать на эту тему:';
