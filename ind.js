@@ -1,7 +1,46 @@
 'use strict';
 
+let styles = [
+    'Jaz',
+    'Byz',
+];
+
+styles.push('RokAndRoll');
+console.log(styles);
+styles[1] = 'Clasic';
+
+for (let key of styles) {
+    console.log(key);
+}
+
+alert(styles.shift(1));
+styles.unshift('Rep', 'Regy');
+alert(styles);
+styles[1] = 'Klasic'
 
 
+
+// let arr = [
+//     'Photos',
+//     'Liom',
+//     'Teos',
+// ];
+
+// console.log(arr[1]);
+// console.log(arr.pop());
+
+
+
+// let x = [];
+
+// x.push('Протокол', 'Панацея', 'Докор',);
+
+//     for (let key of x) {
+
+//     console.log(key);
+// }
+
+// console.log(x.length);
 
 
 
