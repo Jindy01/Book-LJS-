@@ -1,22 +1,142 @@
 'use strict';
 
-let styles = [
-    'Jaz',
-    'Byz',
-];
+let x = [1,3,2,41,23,42,123,214];
 
-styles.push('RokAndRoll');
-console.log(styles);
-styles[1] = 'Clasic';
+    for (let i = 0; i < x.length; i++) {
+        
+        console.log(x);
+    }
 
-for (let key of styles) {
-    console.log(key);
-}
+console.log(x.length);
 
-alert(styles.shift(1));
-styles.unshift('Rep', 'Regy');
-alert(styles);
-styles[1] = 'Klasic'
+
+
+// function revaive(arr) {
+
+//     arr = Array.from(arguments);
+//     let sumMax = 0;
+//     let particalSum = 0;
+
+//     for (let key of arr) {
+//         particalSum += key;
+//         sumMax = Math.max(sumMax, particalSum);
+//         if (particalSum < 0) particalSum = 0;
+//     }
+
+//     console.log(sumMax);
+// }
+
+// revaive(3, 4, 5, 1, -3, 5);
+
+
+// let x = [1,3,4,5,2,15,21];
+
+// for (let i = 0; i < x.length; i++) {
+//     console.log(x);
+// }
+
+
+
+// function getMaxSum(arr) {
+
+//         arr = Array.from(arguments);
+//         let sum = 0;
+
+//     for (let i = 0; i < arr.length; i++) {
+//         let sumFixsed = 0;
+//             for (let j = i; j < arr.length; j++) {
+//                 sumFixsed += arr[j];
+//                     sum = Math.max(sum, sumFixsed);
+//             }
+//     }
+//         console.log(sum);
+//     return sum;
+
+
+// }
+
+// getMaxSum(2,  7, -5 , 5, 2);
+
+
+
+// function sumInput() {
+
+//     let arr = [];
+//    while (true) {
+//         let x = prompt('Number');
+//         if  (x === '' || x === null || !isFinite(x)) break;
+//         arr.push(+x);
+//     }
+
+//     let sum = 0;
+//     for (let key of arr) {
+//         sum += key;
+//     }
+//     return sum;
+// }
+
+// alert (sumInput());
+
+
+
+// let arr = [];
+// let x = 0;
+// let sum = 0;
+
+// while(true) {
+//     x += +prompt('');
+//     if (!x) break;
+//     sum += x;
+//     return sum;
+// }
+
+
+
+// function getNumber () {
+
+//     while (true) {
+
+//         x = prompt('Number');
+//         if (!x) break;
+//         return arr.push(x);
+
+//     }
+
+// }
+
+
+
+// for (let key of arr) {
+
+//     console.log(key);
+
+// }
+
+// let text = +prompt('');
+
+// let arrTest = [];
+
+// arrTest.push(text);
+
+// console.log(arrTest);
+
+
+
+// let styles = [
+//     'Jaz',
+//     'Byz',
+// ];
+
+// styles.push('RokAndRoll');
+// styles[(Math.floor(styles.length - 1) / 2)] = 'Classic';
+
+// alert(styles.shift(1));
+// styles.unshift('Rep', 'Regy',);
+
+// for (let key of styles) {
+//     console.log(key);
+// }
+// console.log(styles);
 
 
 
@@ -65,7 +185,7 @@ styles[1] = 'Klasic'
 
 
 
-// function extractCurrencyValue (str) {
+// function extractCurrencyarr (str) {
 
 //     let result = +str.substr(1);
 
@@ -73,7 +193,7 @@ styles[1] = 'Klasic'
 //     return result;
 // }
 
-// alert( extractCurrencyValue('$120') === 120);
+// alert( extractCurrencyarr('$120') === 120);
 
 
 // let test = 'Вот, что мне хотелось бы сказать на эту тему:';
@@ -353,7 +473,7 @@ styles[1] = 'Klasic'
 //         return this.name;
 //     },
 
-//     valueOf () {
+//     arrOf () {
 //         return this.number;
 //     }
     
@@ -373,7 +493,7 @@ styles[1] = 'Klasic'
 //     return `{name: "${this.name}"}`;
 // },
 
-//     valueOf() {
+//     arrOf() {
 //         return this.money;
 //     }
 // };  
@@ -392,7 +512,7 @@ styles[1] = 'Klasic'
 // }
 
 // alert(user);
-// alert(id.valueOf() === id );
+// alert(id.arrOf() === id );
 
 
 
@@ -420,9 +540,9 @@ styles[1] = 'Klasic'
 //     [ids]: 8241952,
 // };
 
-// function niceChek(value) {
-//     for (let key in value) {
-//         console.log(value[key]);
+// function niceChek(arr) {
+//     for (let key in arr) {
+//         console.log(arr[key]);
 //     }
 // }
 
@@ -433,8 +553,8 @@ styles[1] = 'Klasic'
 // let sum = Symbol.for('id');
 // let sim = Symbol('id')
 
-// function chekSymbol (value) {
-//     let check =  (Symbol.keyFor(value));
+// function chekSymbol (arr) {
+//     let check =  (Symbol.keyFor(arr));
 
 //     {
 //         if (check == undefined) {
@@ -491,12 +611,12 @@ styles[1] = 'Klasic'
 
 
 
-// function Accumulator(startingValue) {
+// function Accumulator(startingarr) {
 
-//     this.value = startingValue;
+//     this.arr = startingarr;
 
 //     this.read = function() {
-//         this.value += +prompt('Number?', 0);
+//         this.arr += +prompt('Number?', 0);
 //     }
 // }
 
@@ -504,7 +624,7 @@ styles[1] = 'Klasic'
 
 // accumulator.read();
 // accumulator.read();
-// console.log(accumulator.value);
+// console.log(accumulator.arr);
 
 
 
@@ -1461,7 +1581,7 @@ styles[1] = 'Klasic'
 // minX(1,2,0,4,5,6,7,8,0);
 
 // function minNum(z) {
-//     let x = Object.values(z);
+//     let x = Object.arrs(z);
 //     return Math.min.apply(null, x);
 // }
 
@@ -1491,8 +1611,8 @@ styles[1] = 'Klasic'
 // nin(1,2,3,4,5,6,7,8,0);
 
 // function minx() {
-//     let minValue = Math.min(arguments);
-//     console.log(minValue);
+//     let minarr = Math.min(arguments);
+//     console.log(minarr);
 // }
 
 // minx(1,2,3,4,5,6,7,8,0);
@@ -1547,7 +1667,7 @@ styles[1] = 'Klasic'
 
 // let age = prompt('Возраст');
 
-// function checkAge(value) {
+// function checkAge(arr) {
 //     check = (age >= 18) ? true : (age < 18) ? retur() : retur();
 // }
 
