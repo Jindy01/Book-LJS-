@@ -1,13 +1,26 @@
 'use strict';
 
-let x = [1,3,2,41,23,42,123,214];
+let x = [
+    'Xjhm',
+    'Vox',
+    'NewId',
+    'NewSV'
+]
 
-    for (let i = 0; i < x.length; i++) {
+console.log(x.slice(1,3));
+x.splice(2, 0, 'Давай дружить', 'Со мной ');
+
+console.log(x);
+
+
+
+// let x = [1,3,2,41,23,42,123,214];
+
+//     for (let i = 0; i < x.length; i++) {
         
-        console.log(x);
-    }
+//         console.log(x);
 
-console.log(x.length);
+//     }
 
 
 
