@@ -1,16 +1,161 @@
 'use strict';
 
-let x = [
-    'Xjhm',
-    'Vox',
-    'NewId',
-    'NewSV'
-]
+let testArr = ['Mass', 'Car', 'Summer', 'Light', 'Night'];
 
-console.log(x.slice(1,3));
-x.splice(2, 0, 'Давай дружить', 'Со мной ');
+console.log(testArr.map((word, index) => index));
 
-console.log(x);
+
+// function camelize (value) {
+
+
+//     // let result = value.split('-');
+//     // let result = value.split('-').map((word, index) => index == 0 ? word : word[0].toUpperCase() + word.slice(1)).join('');
+//     // console.log(result);
+//     // result.join('');
+
+
+//     let test = value.split('-');
+//     test = test.map((word, index) => index == 0 ? word : word[0].toUpperCase() + word.slice(1));
+//     test = test.join('');
+//     console.log(test);
+
+
+// }
+
+// camelize("background-color") == 'backgroundColor';
+// camelize("list-style-image") == 'listStyleImage';
+// camelize("-webkit-transition") == 'WebkitTransition';
+
+
+
+// let normalyAge = {
+//     minAge: 18,
+//     maxAge: 28,
+//     CanJoin(user) {
+//         return (user.age >= this.minAge && user.age <= this.maxAge);
+//     }
+// };
+
+// let users = [
+//     {age: 13},
+//     {age: 18},
+//     {age: 21},
+//     {age: 23},
+//     {age: 28},
+//     {age: 30},
+// ];
+
+// let result = users.filter(normalyAge.CanJoin, normalyAge);
+
+// console.log(result);
+// console.log(result[0].age);
+// console.log(result[1].age);
+// console.log(result[2].age);
+// // console.log(result[3].age);
+// // console.log(result[4].age);
+// console.log(normalyAge);
+
+
+
+// let arr = [];
+// let obj = {};
+
+// function chackArr(arr) {
+//     if (Array.isArray(arr)) {
+//         alert(`${arr} это массив`);
+//     } else if (Array.isArray(arr) === false) {
+//         alert(`${arr} это объект`);
+//     } else {
+//         alert('Что-то иное');
+//     }
+// }
+
+// chackArr(arr);
+// chackArr(obj);
+
+
+
+// let names = 'Вася/ Petya/ Jenya';
+
+// let result = names.split('/ ');
+
+// for (let key of result) {
+//     console.log(`Message sent ${key}`);
+// }
+
+
+
+// let countries = ['Österreich', 'Andorra', 'Vietnam'];
+// let result = (countries.sort((a, b) => a.localeCompare(b)));
+
+// result.reverse();
+// console.log(result);
+
+
+
+// let arrNumber = [1, 3, 5, 6, 2, 3, 4, 6, 1, 9];
+
+// arrNumber.sort((a, b) => a -b);
+// console.log(arrNumber);
+
+
+
+// function sorts (a, b) {
+//     if (a > b) return 1;
+//     if (a == b) return 0;
+//     if (a < b) return -1;
+// }
+
+// arrNumber.sort(sorts);
+
+// console.log(arrNumber);
+
+
+
+// let users = [
+
+//     {id: 1 , name: 'Женя'},
+//     {id: 2 , name: 'Констанстин'},
+//     {id: 3 , name: 'Немида'},
+//     {id: 4 , name: 'Саняс'},
+
+// ];
+
+// let searchUser = users.find(item => item.name == 'Немида');
+// let result = users.filter(item => item.id < 3);
+
+// console.log(searchUser);
+// console.log(result.length);
+
+
+
+// let arr = [
+//     'Жизнь',
+//     'Flower',
+//     'Metoros',
+// ];
+
+// arr.forEach(alert);
+
+// let result = arr.includes('Flower', 0);
+// let resultTets = arr.indexOf('Metoros', 0);
+
+// console.log(result);
+// console.log(resultTets);
+
+
+
+// let x = [
+//     'Xjhm',
+//     'Vox',
+//     'NewId',
+//     'NewSV'
+// ]
+
+// console.log(x.slice(1,3));
+// x.splice(2, 0, 'Давай дружить', 'Со мной ');
+
+// console.log(x);
 
 
 
