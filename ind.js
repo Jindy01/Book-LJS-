@@ -1,8 +1,27 @@
 'use strict';
 
-let testArr = ['Mass', 'Car', 'Summer', 'Light', 'Night'];
+//          Я буду всегда рядом         //
 
-console.log(testArr.map((word, index) => index));
+
+let x = [2, 3, 4, 5, 6, 7];
+
+function toIxted(value) {
+
+    let sum = 0;
+    
+    for (let key of arguments) {
+        sum += key;
+        console.log(sum);
+    }
+
+}
+
+toIxted();
+
+
+// let testArr = ['Mass', 'Car', 'Summer', 'Light', 'Night'];
+
+// console.log(testArr.map((word, index) => index));
 
 
 // function camelize (value) {
