@@ -3,20 +3,20 @@
 //          Я буду всегда рядом         //
 
 
-let x = [2, 3, 4, 5, 6, 7];
 
-function toIxted(value) {
+function toIxted(...value) {
 
+    let arg = value;
     let sum = 0;
-    
-    for (let key of arguments) {
-        sum += key;
-        console.log(sum);
-    }
 
+        for (let key of arg) {
+            sum += key;
+        }
+
+        console.log(sum);
 }
 
-toIxted();
+toIxted(2,3,4,5,1,2,1);
 
 
 // let testArr = ['Mass', 'Car', 'Summer', 'Light', 'Night'];
