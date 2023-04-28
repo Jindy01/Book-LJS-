@@ -2,21 +2,30 @@
 
 //          Я буду всегда рядом         //
 
+let obj = {
+    name: '',
+    age: 0,
+};
+
+obj.giveValue();
+
+console.log(obj);
 
 
-function toIxted(...value) {
 
-    let arg = value;
-    let sum = 0;
+// function toIxted(...value) {
 
-        for (let key of arg) {
-            sum += key;
-        }
+//     let arg = value;
+//     let sum = 0;
 
-        console.log(sum);
-}
+//         for (let key of arg) {
+//             sum += key;
+//         }
 
-toIxted(2,3,4,5,1,2,1);
+//         console.log(sum);
+// }
+
+// toIxted(2,3,4,5,1,2,1);
 
 
 // let testArr = ['Mass', 'Car', 'Summer', 'Light', 'Night'];
