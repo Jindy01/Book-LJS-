@@ -1,15 +1,37 @@
 'use strict';
 
 //          Я буду всегда рядом         //
+//          Доизучать Метод.Массива MAP         //
 
-let obj = {
-    name: '',
-    age: 0,
-};
 
-obj.giveValue();
+let arr = [1, 7, 4, 6, 7, 1, 4, 3, 2];
+let arrFiltered = [];
 
-console.log(obj);
+function filter(arr) {
+
+    for (let key of arr) {
+        console.log(key);
+        if (key >= 1 || key <= 4) {
+            arrFiltered.push(key);
+        }
+
+    }
+
+}
+
+
+console.log(arrFiltered);
+filter(arr);
+
+
+// let obj = {
+//     name: '',
+//     age: 0,
+// };
+
+// obj.giveValue();
+
+// console.log(obj);
 
 
 
