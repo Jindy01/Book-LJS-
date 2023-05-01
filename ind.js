@@ -1,29 +1,117 @@
 'use strict';
 
-
-
-//          Я буду всегда рядом         //
+ //         Я буду всегда рядом                  // 
 //          Доизучать Метод.Массива MAP         //
 
 
-let arr = [1, 7, 4, 6, 7, 1, 4, 3, 2];
-let arrFiltered = [];
+let arr = [5, 3, 8, 1, 3]
 
-function filter(arr) {
+function filterRange(arr) {
+
+    let newArr = [];
 
     for (let key of arr) {
+            
+            if (key >= 1 && key <= 4) {
+                newArr.push(key);
+                console.log(newArr);
+                    
+            }
+
         console.log(key);
-        if (key >= 1 || key <= 4) {
-            arrFiltered.push(key);
-        }
 
     }
 
 }
 
+// alert(filterRange(arr))
+filterRange(arr);
 
-console.log(arrFiltered);
-filter(arr);
+
+// let randomArr = [];
+
+// function pushRandomNumber(targetNumber) {
+
+//     targetNumber = prompt('Кол-во рандомных чисел');
+
+//     for (let i = 0; i < targetNumber; ++i) {
+
+//         let randomNumber = (Math.random() * 10);
+//         randomArr.push(randomNumber);
+//     }
+
+// }
+
+// function roundNumber(value) {
+
+//     for(let key of value) {
+
+//             let result = Math.round(key);
+//             console.log(result);
+//     }
+
+// }
+
+// pushRandomNumber();
+// roundNumber(randomArr);
+
+
+
+// function testSplit(value) {
+
+//     let test = value.split('-');
+//     test = test.map((word) => word[0].toUpperCase() + word.slice(1));
+//     test = test.join('');
+//     console.log(test);
+
+// }
+
+// testSplit('mandarin-persik-tikva');
+
+// let arr = ['mandarin-persik-tikva'];
+
+//     let result = arr.split('-');
+//     result = arr.map((q) => q[0].toUpperCase() + q.slice(1)); 
+
+// console.log(result);
+
+
+// function camelize (value) {
+
+
+//     // let result = value.split('-');
+//     // let result = value.split('-').map((word, index) => index == 0 ? word : word[0].toUpperCase() + word.slice(1)).join('');
+//     // console.log(result);
+//     // result.join('');
+
+
+//     let test = value.split('-');
+//     test = test.map((word, index) => index == 0 ? word : word[0].toUpperCase() + word.slice(1));
+//     test = test.join('');
+//     console.log(test);
+
+
+// }
+
+
+// let arr = [1, 7, 4, 6, 7, 1, 4, 3, 2];
+// let arrFiltered = [];
+
+// function filter(arr) {
+
+//     for (let key of arr) {
+//         console.log(key);
+//         if (key >= 1 || key <= 4) {
+//             arrFiltered.push(key);
+//         }
+
+//     }
+
+// }
+
+
+// console.log(arrFiltered);
+// filter(arr);
 
 
 // let obj = {
@@ -2414,4 +2502,4 @@ filter(arr);
 
 // let text = prompt('Напишите инициалы');
 
-// alert (`${text} добро пожаловать !`)
+// alert (`${text} добро пожаловать !`);
