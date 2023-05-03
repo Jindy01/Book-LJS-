@@ -4,25 +4,27 @@
 //          Доизучать Метод.Массива MAP         //
 
 
-let arr = [5, 3, 8, 1, 3]
+let commit = [];
 
-function filterRange(arr) {
+// let arr = [5, 3, 8, 1, 3]
 
-    let newArr = [];
+// function filterRange(arr) {
 
-    for (let key of arr) {
+//     let newArr = [];
+
+//     for (let key of arr) {
             
-            if (key >= 1 && key <= 4) {
-                newArr.push(key);
-                console.log(newArr);
+//             if (key >= 1 && key <= 4) {
+//                 newArr.push(key);
+//                 console.log(newArr);
                     
-            }
+//             }
 
-        console.log(key);
+//         console.log(key);
 
-    }
+//     }
 
-}
+// }
 
 // alert(filterRange(arr))
 filterRange(arr);
