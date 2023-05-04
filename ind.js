@@ -4,30 +4,100 @@
 //          Доизучать Метод.Массива MAP         //
 
 
-let commit = [];
 
-// let arr = [5, 3, 8, 1, 3]
+// let x = ['frafdsa', 'Kewew', 'Qwalo', 'Weres'];
 
-// function filterRange(arr) {
+// for (let i = 0; i < x.length; i++) {
 
-//     let newArr = [];
-
-//     for (let key of arr) {
-            
-//             if (key >= 1 && key <= 4) {
-//                 newArr.push(key);
-//                 console.log(newArr);
-                    
-//             }
-
-//         console.log(key);
-
-//     }
-
+//     alert(x[i]);
 // }
 
-// alert(filterRange(arr))
-filterRange(arr);
+
+function filterRangeInPlace(arr, a, b) {
+
+    for (let i = 0; i < arr.length; i++) {
+      let val = arr[i];
+  
+      // удалить, если за пределами интервала
+      if (val < a || val > b) {
+        arr.splice(i, 1);
+        i--;
+      }
+    }
+  
+  }
+  
+//   let arr = [5, 3, 8, 1];
+  
+//   filterRangeInPlace(arr, 1, 4); // удалены числа вне диапазона 1..4
+  
+//   alert( arr ); 
+
+// let arr = [5, 3, 8, 1];
+
+// function newArr(arr, a, b) {
+
+//     let result = arr.filter(item => (a <= item && item <= b));
+
+//         console.log(result);
+
+
+    // arr.map((number) => (number <= a && number <= b)  )
+
+
+    // let result = arr.filter(item =>(a <= item && item <= b));
+    // let resulTwo = result.filter(item)
+
+    
+// }
+
+// newArr(arr, 1, 4);
+
+// function filterRangeInPlace(arr, a, b) {
+
+//     let pushSort = arr.filter(item=>(a <= item && item <= b));
+//         console.log(pushSort);
+
+//     for (let key of pushSort) {
+//         console.log(key[0]);
+//     }
+    
+// }
+
+
+// function art(arr, a, b) {
+
+
+//         let del = arr.filter((item => (a <= item && item >= b)));
+
+//         let result = arr.filter(item => (a <= item && item <= b));
+
+//             if (result == a && result == b) {
+//                 newArr.push(result);
+//             }
+//             console.log(result);
+            
+//             for (let key of result) {
+//                 newArr.push(key);
+//             }
+            
+//         arr.push(result);
+// }
+
+
+// let result = filterRangeInPlace(arr, 1, 4);
+
+// console.log(result);
+// console.log(arr);
+
+
+
+// let arr = [5, 3, 8, 1, 3];
+
+// const filterArr = ((ars, a, b) => ars.filter(item =>(a <= item && item <= b )));
+
+// let six = filterArr(arr, 1, 4);
+// console.log(six);
 
 
 // let randomArr = [];
