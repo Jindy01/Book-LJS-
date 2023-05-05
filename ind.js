@@ -12,6 +12,20 @@
 //     alert(x[i]);
 // }
 
+// let checkInterval = [1,3,2,5,1,2,5,8,6,3,9,4];
+
+// function test(arr) {
+
+//     for (let key of arr) {
+//         if (key < 1 || key < 5 ) {
+//             alert(`${key} число из интервала `);
+//         } 
+//     }
+// }
+
+// test(checkInterval);    
+
+
 
 function filterRangeInPlace(arr, a, b) {
 
@@ -25,13 +39,15 @@ function filterRangeInPlace(arr, a, b) {
       }
     }
   
-  }
+}
   
-//   let arr = [5, 3, 8, 1];
+  let arr = [5, 3, 8, 1, 3, 2, 1, 2];
   
-//   filterRangeInPlace(arr, 1, 4); // удалены числа вне диапазона 1..4
+  filterRangeInPlace(arr, 1, 4); // удалены числа вне диапазона 1..4
   
-//   alert( arr ); 
+  alert( arr ); 
+
+
 
 // let arr = [5, 3, 8, 1];
 
