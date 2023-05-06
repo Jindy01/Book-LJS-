@@ -5,6 +5,139 @@
 
 
 
+// let testArr = ['1 + 2'];
+
+// function giveString(arr) {
+
+//     let srting = arr.join().split(' ');
+//         console.log(srting);
+// }
+
+// giveString(testArr);
+
+
+function calculate(string) {
+
+    let result;
+
+        //      Получает массив из строки       //
+        if (string == String(string)) {
+            result = string.split(' ');
+        }
+
+        //     Переобразует массив        //
+        if (Array.isArray(string)) {
+            result = string.join().split(' ');
+        }
+
+        //      Получение числа     //
+    let number = result[0];
+        number = Number(number);
+
+    let twoNumber = result[2];
+        twoNumber = Number(twoNumber);
+
+        //      Получение оператора     //
+        let metod = result[1];
+
+            //      Операторы       //
+                if (metod == '+') {
+                let result = number + twoNumber;
+                return result;
+                }
+                if (metod == '-') {
+                    let result = number - twoNumber;
+                return result;
+                }
+                if (metod == '*') {
+                    let result = number * twoNumber;
+                return result;
+                }
+                if (metod == '**') {
+                    let result = number ** twoNumber;
+                return result;
+                }  
+                if (metod == '/') {
+                    let result = number / twoNumber;
+                return result;
+                }
+
+}   
+
+
+
+alert (calculate('3 * 7'));
+
+
+
+// let calcUser = new calculator;
+
+
+
+// let arrs = ["HTML", "JavaScript", "CSS"];
+
+// function copySorted(arr) {
+
+//         let coppy = Object.assign([], arr);
+//     coppy.sort((a, b) => a.localeCompare(b));
+//         return coppy;
+// }
+
+// let sorted = copySorted(arrs);
+
+// alert( arrs ); 
+// alert( sorted ); 
+
+
+
+// let arr = ["HTML", "JavaScript", "CSS"];
+// let test = ((arr) => arr.slice().sort());
+
+// alert(test(arr));
+// alert(arr);
+
+
+
+// const fruits = ['apple', 'banana', 'orange'];
+
+// let cloneS = Object.assign([], fruits);
+
+// cloneS.push('Arrms');
+
+// console.log(cloneS);
+// console.log(fruits);
+
+
+
+// let asrr = [5, 2, 1, -10, 8];
+
+// // function filter(arr) {
+
+// //     arr.sort(function(a, b) {
+// //         return b - a;
+// //     });
+// // }
+
+
+// // filter(arr);
+// // alert(arr);
+
+
+
+// let arr = [5, 2, 1, -10, 8];
+// arr.sort((a, b) => b- a);
+// alert(arr);
+
+
+
+// let obj = {};
+
+// obj.name = 'Alex';
+
+// console.log(obj);
+
+
+
 // let x = ['frafdsa', 'Kewew', 'Qwalo', 'Weres'];
 
 // for (let i = 0; i < x.length; i++) {
@@ -27,25 +160,25 @@
 
 
 
-function filterRangeInPlace(arr, a, b) {
+// function filterRangeInPlace(arr, a, b) {
 
-    for (let i = 0; i < arr.length; i++) {
-      let val = arr[i];
+//     for (let i = 0; i < arr.length; i++) {
+//       let val = arr[i];
   
-      // удалить, если за пределами интервала
-      if (val < a || val > b) {
-        arr.splice(i, 1);
-        i--;
-      }
-    }
+//       // удалить, если за пределами интервала
+//       if (val < a || val > b) {
+//         arr.splice(i, 1);
+//         i--;
+//       }
+//     }
   
-}
+// }
   
-  let arr = [5, 3, 8, 1, 3, 2, 1, 2];
+//   let arr = [5, 3, 8, 1, 3, 2, 1, 2];
   
-  filterRangeInPlace(arr, 1, 4); // удалены числа вне диапазона 1..4
+//   filterRangeInPlace(arr, 1, 4); // удалены числа вне диапазона 1..4
   
-  alert( arr ); 
+//   alert( arr ); 
 
 
 
@@ -55,7 +188,7 @@ function filterRangeInPlace(arr, a, b) {
 
 //     let result = arr.filter(item => (a <= item && item <= b));
 
-//         console.log(result);
+//         return result;
 
 
     // arr.map((number) => (number <= a && number <= b)  )
@@ -91,7 +224,7 @@ function filterRangeInPlace(arr, a, b) {
 //             if (result == a && result == b) {
 //                 newArr.push(result);
 //             }
-//             console.log(result);
+//             return result;
             
 //             for (let key of result) {
 //                 newArr.push(key);
@@ -103,7 +236,7 @@ function filterRangeInPlace(arr, a, b) {
 
 // let result = filterRangeInPlace(arr, 1, 4);
 
-// console.log(result);
+// return result;
 // console.log(arr);
 
 
@@ -135,7 +268,7 @@ function filterRangeInPlace(arr, a, b) {
 //     for(let key of value) {
 
 //             let result = Math.round(key);
-//             console.log(result);
+//             return result;
 //     }
 
 // }
@@ -161,7 +294,7 @@ function filterRangeInPlace(arr, a, b) {
 //     let result = arr.split('-');
 //     result = arr.map((q) => q[0].toUpperCase() + q.slice(1)); 
 
-// console.log(result);
+// return result;
 
 
 // function camelize (value) {
@@ -169,7 +302,7 @@ function filterRangeInPlace(arr, a, b) {
 
 //     // let result = value.split('-');
 //     // let result = value.split('-').map((word, index) => index == 0 ? word : word[0].toUpperCase() + word.slice(1)).join('');
-//     // console.log(result);
+//     // return result;
 //     // result.join('');
 
 
@@ -238,7 +371,7 @@ function filterRangeInPlace(arr, a, b) {
 
 //     // let result = value.split('-');
 //     // let result = value.split('-').map((word, index) => index == 0 ? word : word[0].toUpperCase() + word.slice(1)).join('');
-//     // console.log(result);
+//     // return result;
 //     // result.join('');
 
 
@@ -275,7 +408,7 @@ function filterRangeInPlace(arr, a, b) {
 
 // let result = users.filter(normalyAge.CanJoin, normalyAge);
 
-// console.log(result);
+// return result;
 // console.log(result[0].age);
 // console.log(result[1].age);
 // console.log(result[2].age);
@@ -317,7 +450,7 @@ function filterRangeInPlace(arr, a, b) {
 // let result = (countries.sort((a, b) => a.localeCompare(b)));
 
 // result.reverse();
-// console.log(result);
+// return result;
 
 
 
@@ -368,7 +501,7 @@ function filterRangeInPlace(arr, a, b) {
 // let result = arr.includes('Flower', 0);
 // let resultTets = arr.indexOf('Metoros', 0);
 
-// console.log(result);
+// return result;
 // console.log(resultTets);
 
 
@@ -575,7 +708,7 @@ function filterRangeInPlace(arr, a, b) {
 
 //     let result = +str.substr(1);
 
-//     console.log(result);
+//     return result;
 //     return result;
 // }
 
@@ -595,7 +728,7 @@ function filterRangeInPlace(arr, a, b) {
 //     if (srt.length > maxlenght) {
 //         result = srt.slice(0, maxlenght - 1);
 //             result = result + desuce;
-//         console.log(result);
+//         return result;
 //     } else {
 //         console.log(srt);
 //     }
