@@ -1,7 +1,27 @@
 'use strict';
 
+    //      TASK        //
+
  //         Я буду всегда рядом                  // 
-//          Доизучать Метод.Массива MAP         //
+
+//    !!!!      ПОВТОРИТЬ THIS. а то чё за бред ?    !!!       //
+
+//          Дорешать        //  
+
+let vasya = { name: "Вася", age: 25 };
+let petya = { name: "Петя", age: 30 };
+let masha = { name: "Маша", age: 28 };
+
+let users = [ vasya, petya, masha ];
+
+function giveNameUser (arr) {
+
+    for (let i = 0;)
+  console.log(arr);
+
+}
+
+giveNameUser(users);
 
 
 
@@ -16,61 +36,105 @@
 // giveString(testArr);
 
 
-function calculate(string) {
+// let calc = new Calculator;
 
-    let result;
+// function Calculator(string) {
 
-        //      Получает массив из строки       //
-        if (string == String(string)) {
-            result = string.split(' ');
-        }
+//     string.map((a, b) => ) 
 
-        //     Переобразует массив        //
-        if (Array.isArray(string)) {
-            result = string.join().split(' ');
-        }
-
-        //      Получение числа     //
-    let number = result[0];
-        number = Number(number);
-
-    let twoNumber = result[2];
-        twoNumber = Number(twoNumber);
-
-        //      Получение оператора     //
-        let metod = result[1];
-
-            //      Операторы       //
-                if (metod == '+') {
-                let result = number + twoNumber;
-                return result;
-                }
-                if (metod == '-') {
-                    let result = number - twoNumber;
-                return result;
-                }
-                if (metod == '*') {
-                    let result = number * twoNumber;
-                return result;
-                }
-                if (metod == '**') {
-                    let result = number ** twoNumber;
-                return result;
-                }  
-                if (metod == '/') {
-                    let result = number / twoNumber;
-                return result;
-                }
-
-}   
+// }
 
 
 
-alert (calculate('3 * 7'));
+// let obj = {};
+
+// function giveUpObject(objects) {
+
+//   this.objects = 'ARTUIM';
+
+// } 
+
+// giveUpObject(obj);
+// console.log(obj);
 
 
 
-// let calcUser = new calculator;
+// function Calculator() {
+
+//     this.methods = {
+//       "-": (a, b) => a - b,
+//       "+": (a, b) => a + b
+//     };
+  
+//     this.calculate = function(str) {
+  
+//       let split = str.split(' '),
+//         a = +split[0],
+//         op = split[1],
+//         b = +split[2]
+  
+//       if (!this.methods[op] || isNaN(a) || isNaN(b)) {
+//         return NaN;
+//       }
+  
+//       return this.methods[op](a, b);
+//     }
+  
+//     this.addMethod = function(name, func) {
+//       this.methods[name] = func;
+//     };
+//   }
+
+// let powerCalc = new Calculator;
+// powerCalc.addMethod("*", (a, b) => a * b);
+// powerCalc.addMethod("/", (a, b) => a / b);
+// powerCalc.addMethod("**", (a, b) => a ** b);
+
+// let result = powerCalc.calculate("2 ** 3");
+
+// alert( result ); // 8
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// function calculate(string) {
+
+//     let result;
+
+//         //      Получает массив из строки       //
+//         if (string === String(string)) {
+//             result = string.split(' ');
+//         } else {
+//             result = string.join().split(' ');
+//         }
+
+//         //      Получение числа     //
+//     let number = +result[0];
+//     let twoNumber = +result[2];
+
+//         //      Получение оператора     //
+//     let operator = result[1];
+
+//             //      Операторы       //
+//             if (operator === '+') {
+//                 return result = number + twoNumber;
+//             }
+//             if (operator === '-') {
+//                 return result = number - twoNumber;
+//             }
+//             if (operator === '*') {
+//                 return result = number * twoNumber;
+//             }
+//             if (operator === '**') {
+//                 return  result = number ** twoNumber;
+//             }  
+//             if (operator === '/') {
+//                 return result = number / twoNumber;
+//             }
+// }   
+
+// alert (calculate('10 * 8'));
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
