@@ -8,20 +8,35 @@
 
 //          Дорешать        //  
 
-let vasya = { name: "Вася", age: 25 };
-let petya = { name: "Петя", age: 30 };
-let masha = { name: "Маша", age: 28 };
+// console.log('Hello!');
 
-let users = [ vasya, petya, masha ];
+// let vasya = { name: "Вася", age: 25 };
+// let petya = { name: "Петя", age: 30 };
+// let masha = { name: "Маша", age: 28 };
 
-function giveNameUser (arr) {
+// let users = [ vasya, petya, masha ];
 
-    for (let i = 0;)
-  console.log(arr);
+// console.log(users);
 
-}
+// function giveNameUser (arr) {
 
-giveNameUser(users);
+//             console.log(arr);
+
+//     for (let i = 0; i < arr.length; ++i) {
+
+//         arr[i] = alert(arr);
+            
+//         console.log(users.length);
+
+
+//     }
+//   console.log(arr);
+
+// }
+
+// console.log(users);
+
+// giveNameUser(users);
 
 
 
@@ -2574,7 +2589,6 @@ giveNameUser(users);
 
 
 
-
 // let age;
 // age = prompt('Возраст?');
 
@@ -2584,7 +2598,6 @@ giveNameUser(users);
 //     (!(age >= 14 && age <= 90)) 
 //     alert('Ненужный возраст');
 // }
-
 
 
 
@@ -2599,7 +2612,6 @@ giveNameUser(users);
 // if (c >= z && z == c && c > 0) {
 //     alert('Read!')
 // }
-
 
 
 
