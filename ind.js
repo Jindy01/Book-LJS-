@@ -3,40 +3,113 @@
     //      TASK        //
 
  //         Я буду всегда рядом                  // 
-
+ 
 //    !!!!      ПОВТОРИТЬ THIS. а то чё за бред ?    !!!       //
 
 //          Дорешать        //  
 
-// console.log('Hello!');
+
+
+
+
+
+
+let vasya = { name: "Вася", age: 25 };
+let petya = { name: "Петя", age: 30 };
+let masha = { name: "Маша", age: 28 };
+
+let arrs = [ vasya, petya, masha ];
+
+arrs.sort((a, b) => {
+    return b.age - a.age;
+});
+
+console.log(arrs);
+
+alert(arrs[0].name); 
+alert(arrs[1].name); 
+alert(arrs[2].name);
+
+// function sortAge(arr) {
+
+//     let result = arr.sort((a, b) => a.age - b.age);
+
+//         console.log(result);
+//             return result;
+// }
+
+
+// sortAge(arrs);
+
+
+
+// let vasya = { name: "Вася", surname: "Пупкин", id: 1 };
+// let petya = { name: "Петя", surname: "Иванов", id: 2 };
+// let masha = { name: "Маша", surname: "Петрова", id: 3 };
+
+// let users = [ vasya, petya, masha ];
+// console.log(users);
+
+// let user = users.map(item => ({
+//     fullName: `${item.name} ${item.surname}`,
+//     id:item.id,
+// }));
+// console.log(user);
+
+// let learnJs = users.map(user => ({
+//     fullNames: `${user.name} ${user.surname}`,
+//     id: user.id ,
+// }));
+
+
+
+
+// console.log(learnJs);
+
+// console.log(user);
+// alert(user[0].fullName);
+
 
 // let vasya = { name: "Вася", age: 25 };
 // let petya = { name: "Петя", age: 30 };
 // let masha = { name: "Маша", age: 28 };
-
 // let users = [ vasya, petya, masha ];
+// let arrUsers = ['dasfd', 'dsaddsa', 'asddsa'];
 
+// let result = users.map((item) => item.name);
+
+// console.log(result);
+// // console.log(result[1]);
 // console.log(users);
+
+// let result = [];
 
 // function giveNameUser (arr) {
 
-//             console.log(arr);
+//         for (let key of arr) {
+//            result.push(key.name);     
+//         }
 
-//     for (let i = 0; i < arr.length; ++i) {
-
-//         arr[i] = alert(arr);
-            
-//         console.log(users.length);
-
-
-//     }
-//   console.log(arr);
-
+//         // for (let i = 0; i < arr.length; i++) {
+//         //         console.log(arr[i].name);
+//         //         result.push(arr[i].name);
+//         // }
+        
 // }
 
-// console.log(users);
-
 // giveNameUser(users);
+
+
+// // function SeeArr() {
+    
+// //     for (let key of result) {
+// //         alert(key);
+// //     }
+// // }
+// // SeeArr();
+
+// console.log(result[1]);
+// console.log(result);
 
 
 
