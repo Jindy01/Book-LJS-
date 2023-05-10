@@ -8,27 +8,107 @@
 
 //          Дорешать        //  
 
+// let vasya = { name: "Вася", age: 25 };
+// let petya = { name: "Петя", age: 30 };
+// let masha = { name: "Маша", age: 29 };
+
+// let arr = [ vasya, petya, masha ];
+
+// let result = arr.map((item) => item.age)
+//         let results = 0;
+
+//     for (let key of result) {
+//         results += key;
+//     }
+//         results = results / arr.length;
+//             console.log(results);
 
 
 
+    function getAverageAge(users) {
+        return users.reduce((prev, user) => prev + user.age, 0) / users.length;
+      }
+    
+      let vasya = { name: "Вася", age: 25 };
+      let petya = { name: "Петя", age: 30 };
+      let masha = { name: "Маша", age: 29 };
+    
+      let arr = [ vasya, petya, masha ];
+    
+      alert( getAverageAge(arr) ); 
 
 
 
-let vasya = { name: "Вася", age: 25 };
-let petya = { name: "Петя", age: 30 };
-let masha = { name: "Маша", age: 28 };
+// alert( getAverageAge(arr) );
 
-let arrs = [ vasya, petya, masha ];
 
-arrs.sort((a, b) => {
-    return b.age - a.age;
-});
+// function shuffle(array) {
 
-console.log(arrs);
+//     array.sort(() => Math.random() - 0.5);
+//   }
+//   // подсчёт вероятности для всех возможных вариантов
+//   let count = {
+//     '123': 0,
+//     '132': 0,
+//     '213': 0,
+//     '231': 0,
+//     '321': 0,
+//     '312': 0
+//   };
+  
+//   for (let i = 0; i < 1000000; i++) {
+//     let array = [1, 2, 3];
 
-alert(arrs[0].name); 
-alert(arrs[1].name); 
-alert(arrs[2].name);
+//     shuffle(array);
+//     count[array.join('')]++;
+//   }
+  
+//   // показать количество всех возможных вариантов
+//   for (let key in count) {
+//     console.log(`${key}: ${count[key]}`);
+//   }
+
+
+
+// let arr = [1, 2, 3];
+
+// function shuffle(array) {
+        
+//             //      Random Number       //
+//     // let rand = 1 - 0.5 + Math.random() * (3 - 1 + 1);
+//     //     rand = Math.round(rand);
+//         array.sort(() => Math.random() - 0.5);
+//     //         console.log(rand);
+
+//     // if (rand == 1) {
+//     //     array.sort( (a, b) => a - b)
+//     // }
+//     //     if (rand == 2) {
+//     //         array.sort( (a, b) => b - a)
+//     //     }
+
+// }
+
+// shuffle(arr);
+// console.log(arr);
+
+
+
+// let vasya = { name: "Вася", age: 25 };
+// let petya = { name: "Петя", age: 30 };
+// let masha = { name: "Маша", age: 28 };
+
+// let arrs = [ vasya, petya, masha ];
+
+// arrs.sort((a, b) => {
+//     return b.age - a.age;
+// });
+
+// console.log(arrs);
+
+// alert(arrs[0].name); 
+// alert(arrs[1].name); 
+// alert(arrs[2].name);
 
 // function sortAge(arr) {
 
@@ -277,7 +357,7 @@ alert(arrs[2].name);
 
 
 // let arr = [5, 2, 1, -10, 8];
-// arr.sort((a, b) => b- a);
+// arr.sort((a, b) => b - a);
 // alert(arr);
 
 
@@ -367,7 +447,6 @@ alert(arrs[2].name);
 
 
 // function art(arr, a, b) {
-
 
 //         let del = arr.filter((item => (a <= item && item >= b)));
 
@@ -608,7 +687,7 @@ alert(arrs[2].name);
 
 // let arrNumber = [1, 3, 5, 6, 2, 3, 4, 6, 1, 9];
 
-// arrNumber.sort((a, b) => a -b);
+// arrNumber.sort((a, b) => a - b);
 // console.log(arrNumber);
 
 
