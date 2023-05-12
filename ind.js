@@ -8,6 +8,125 @@
 
 //          Дорешать        //  
 
+
+let users = [
+    {id: 'john', name: "John Smith", age: 20},
+    {id: 'ann', name: "Ann Smith", age: 24},
+    {id: 'pete', name: "Pete Peterson", age: 31},
+];
+  
+let usersById = groupById(users);
+  
+function groupById(arr) {
+        
+    let items = arr.map((it) => it);
+        console.log(items);
+
+    let resultId = arr.map((item) => item);
+        console.log(resultId);
+
+    // let result = arr.reduce((ittem) => ittem);
+    //     console.log(result);
+    // let newObject = {
+    //     resultId: {items}
+    // };
+    //     console.log(newObject);
+}
+
+groupById(users);
+
+
+// let achivmant = 0; 
+
+// for (let i = 0; i < 3002; ++i) {
+//     if ( i > 3000) {
+//         achivmant ++;
+//         alert('Ты молодец ! Двигайся Дальше !')
+
+//     }
+// }
+
+// console.log(achivmant);
+
+
+
+// let tmpArray = ["кришна", "кришна", "харе", "харе",
+// "харе", "харе", "кришна", "кришна", ":-O"
+// ];
+// let newArr = [];
+
+// function itemCheck(item) {
+//         let result = [];
+
+//     // result = item.map((item) => item);
+        
+//     //     result.indexOf((item) === -1)
+//     //         result.filter();
+//         for (let key in item) {
+//             if (item.hasOwnProperty(key)) {
+//                 if (result.indexOf(item[key]) === -1) {
+//                     result.push(item[key]);
+//                 }
+//             }
+//         }
+//         console.log(result);
+// }
+
+// itemCheck(tmpArray);
+
+// function inict(arr) {
+
+//     let result = [];
+
+//         for (let key of arr) {
+//             if (!result.includes(key)) {
+//                 result.push(key)
+//             }
+//         }
+//         return result;
+        
+// }
+
+// alert(inict(tmpArray));
+
+
+
+// function checkRiduce(arr) {
+
+//         const newArr = [];
+
+//     let unionString = arr.reduce((a) => {
+//         if (a.map) return a;
+
+//         a.map[arr] = true;
+//             a.arr.push(newArr);
+//                 return a;
+//     })
+
+//     console.log(unionString);
+// }
+
+// function checkIndexOf(arr) {
+
+    
+// }
+
+
+
+// checkRiduce(strings);
+
+    //   let vasya = { name: "Вася", age: 25 };
+    //   let petya = { name: "Петя", age: 30 };
+    //   let masha = { name: "Маша", age: 29 };
+    
+    //   let arr = [ vasya, petya, masha ];  
+      
+    //   console.log(arr.reduce((prev, user) => prev + user.age, 0) / arr.length);
+
+// alert( getAverageAge(arr) );
+
+
+
 // let vasya = { name: "Вася", age: 25 };
 // let petya = { name: "Петя", age: 30 };
 // let masha = { name: "Маша", age: 29 };
@@ -23,23 +142,6 @@
 //         results = results / arr.length;
 //             console.log(results);
 
-
-
-    function getAverageAge(users) {
-        return users.reduce((prev, user) => prev + user.age, 0) / users.length;
-      }
-    
-      let vasya = { name: "Вася", age: 25 };
-      let petya = { name: "Петя", age: 30 };
-      let masha = { name: "Маша", age: 29 };
-    
-      let arr = [ vasya, petya, masha ];
-    
-      alert( getAverageAge(arr) ); 
-
-
-
-// alert( getAverageAge(arr) );
 
 
 // function shuffle(array) {
