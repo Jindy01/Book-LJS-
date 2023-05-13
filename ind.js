@@ -9,31 +9,75 @@
 //          Дорешать        //  
 
 
-let users = [
-    {id: 'john', name: "John Smith", age: 20},
-    {id: 'ann', name: "Ann Smith", age: 24},
-    {id: 'pete', name: "Pete Peterson", age: 31},
-];
-  
-let usersById = groupById(users);
-  
-function groupById(arr) {
-        
-    let items = arr.map((it) => it);
-        console.log(items);
 
-    let resultId = arr.map((item) => item);
-        console.log(resultId);
+let range = {
+    from: 1,
+    to: 5,
+};
 
-    // let result = arr.reduce((ittem) => ittem);
-    //     console.log(result);
-    // let newObject = {
-    //     resultId: {items}
-    // };
-    //     console.log(newObject);
+range[Symbol.iterator] = function() {
+    return {
+        curent: this.from,
+        last: this.to,
+
+        next() {
+            if (this.curent <= this.last) {
+                return { done: false, value: this.curent++ };
+            } else {
+                return { done: true };
+            }
+        }
+    };
+};
+
+for (let num of range) {
+    alert( num );
 }
 
-groupById(users);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// let users = [
+//     {id: 'john', name: "John Smith", age: 20},
+//     {id: 'ann', name: "Ann Smith", age: 24},
+//     {id: 'pete', name: "Pete Peterson", age: 31},
+// ];
+  
+// // let usersById = groupById(users);
+  
+// function groupById(array) {
+//     return array.reduce((obj, value) => {
+//         obj[value.id] = value;
+//         return obj;
+//     }, {})
+// }
+
+// console.log(usersById);
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // let result = users.reduce((obb, addss) => {
+    //     obb[addss.name] = addss;
+    //     return obb;
+    // }, {})
+    // console.log(result);
+    // console.log();
+
+
+// function groupById(arr) {
+        
+//     // let newArr = {};
+
+//     let items = arr.map((it) => it);
+//         console.log(items);
+
+//     let resultId = arr.map((item) => item);
+//         console.log(resultId);
+        
+//     let result = arr.map((ittem) => ittem.id).reduce((obd) => ({
+//         obd: items,
+//         }));
+//         console.log(result);
+// }
+
+// groupById(users);
 
 
 // let achivmant = 0; 
