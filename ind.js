@@ -2,37 +2,99 @@
 
     //      TASK        //
 
- //         Я буду всегда рядом                  // 
- 
 //    !!!!      ПОВТОРИТЬ THIS. а то чё за бред ?    !!!       //
-
 //          Дорешать        //  
 
+let users = new Map ([
+    ['Tana', 28, 38],
+    ['Timo', 26, 32],
+    ['Gomo', 23, 28],
+]);
 
-
-let range = {
-    from: 1,
-    to: 5,
-};
-
-range[Symbol.iterator] = function() {
-    return {
-        curent: this.from,
-        last: this.to,
-
-        next() {
-            if (this.curent <= this.last) {
-                return { done: false, value: this.curent++ };
-            } else {
-                return { done: true };
-            }
-        }
-    };
-};
-
-for (let num of range) {
-    alert( num );
+for (let userOld of users.values()) {
+    console.log(userOld);
 }
+
+for(let user of users.keys()) {
+    console.log(user);
+}
+
+for (let keus of users) {
+    console.log(keus);
+}
+
+// let joo = { name: 'Joo' };
+// let test = { name: 'Test'};
+// let user = {}; 
+
+// user[joo] = 221;
+// user[test] = 221;
+
+//     if( user === user ){
+//         alert('wtf');
+//     }
+// console.log(user);
+
+// alert(user);
+
+
+
+// let newUser = 'Jonny Boo';
+//     let [first, second]= newUser.split(' ');
+//         console.log(first, second);
+
+// const name = {
+//     firstName: 'Art',
+//     lastName: 'Sheo',
+//     get fullName() {
+//         return `${this.firstName} ${this.lastName}`;
+//     },
+//         set fullName(name) {
+//             const [firstName, lastName] = name.split(' ');
+//                 this.firstName = firstName;
+//                 this.lastName = lastName;
+//         }
+// };
+    
+
+
+// console.log(name.fullName);
+// name.fullName = 'Joon Fooa';
+
+// console.log(name.fullName);
+
+// let map = new Map();
+
+// map.set('1', 'ctrs');
+//     alert(map.get('1'));
+
+
+
+// let range = {
+//     from: 1,
+//     to: 5,
+// };
+
+// range[Symbol.iterator] = function() {
+//     return {
+//         curent: this.from,
+//         last: this.to,
+
+//         next() {
+//             if (this.curent <= this.last) {
+//                 return { done: false, value: this.curent++ };
+//             } else {
+//                 return { done: true };
+//             }
+//         }
+//     };
+// };
+
+// for (let num of range) {
+//     alert( num );
+// }
+
+
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
