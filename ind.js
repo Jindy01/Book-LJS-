@@ -5,23 +5,117 @@
 //    !!!!      ПОВТОРИТЬ THIS. а то чё за бред ?    !!!       //
 //          Дорешать        //  
 
-let users = new Map ([
-    ['Tana', 28, 38],
-    ['Timo', 26, 32],
-    ['Gomo', 23, 28],
-]);
 
-for (let userOld of users.values()) {
-    console.log(userOld);
-}
+// let john = { name: 'John' };
 
-for(let user of users.keys()) {
-    console.log(user);
-}
+// let map = new Map();
+// map.set(john, '...');
+// console.log(map.get(john));
 
-for (let keus of users) {
-    console.log(keus);
-}
+
+
+// let arr = [ "nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares" ];
+
+// function test(arr) {
+
+//     let obj;
+//     let map = new Map();
+
+//     for (let key of arr) {
+//         obj = key.toLowerCase().split('').sort().join('');
+//             map.set(obj, key);
+//     }
+//     console.log( Array.from(map.values()));
+// }
+
+// test(arr)
+
+
+
+// let values = ["Hare", "Krishna", "Hare", "Krishna",
+//   "Krishna", "Krishna", "Hare", "Hare", ":-O"
+// ];
+
+// function set(arr) {
+    
+//     //     let set = new Set(arr);
+//     // for (let key of set)
+//     //     console.log([key]);        
+//         let result =  Array.from(new Set(arr));
+//             console.log(result);
+// }
+
+// set(values);
+
+
+
+// let set = new Set(['Apple', 'Hurma', 'Persick']);
+
+// for (let key of set) {
+//         console.log(key);
+// } 
+
+// set.forEach((q, b, set) => {
+//         console.log(q);
+// });
+
+
+
+// let set = new Set();
+
+// let jon = { name: 'Jon'};
+// let jin = { name: 'Jin'};
+// let jan = { name: 'Jan'};
+
+// set.add(jon);
+// set.add(jin);
+// set.add(jon);
+// set.add(jin);
+// set.add(jan);
+
+// alert(set.size);
+
+
+
+// let map = new Map();
+// map.set('Prise', 4);
+// map.set('Prises', 5);
+
+// let obj = Object.fromEntries(map.entries());
+//     console.log(obj.map);
+
+
+// let newObj = {
+//     name: 'Moo',
+//     country: 'Good',
+// };
+
+// let newMap = new Map(Object.entries(newObj));
+
+// console.log(newMap.get('name'));
+// console.log(typeof newMap);
+
+
+
+// let users = new Map ([
+//     ['Tana', 28, 38],
+//     ['Timo', 26, 32],
+//     ['Gomo', 23, 28],
+// ]);
+
+// for (let userOld of users.values()) {
+//     console.log(userOld);
+// }
+
+// for(let user of users.keys()) {
+//     console.log(user);
+// }
+
+// for (let keus of users) {
+//     console.log(keus);
+// }
+
+
 
 // let joo = { name: 'Joo' };
 // let test = { name: 'Test'};
@@ -127,14 +221,14 @@ for (let keus of users) {
         
 //     // let newArr = {};
 
-//     let items = arr.map((it) => it);
-//         console.log(items);
+//     let arrs = arr.map((it) => it);
+//         console.log(arrs);
 
-//     let resultId = arr.map((item) => item);
+//     let resultId = arr.map((arr) => arr);
 //         console.log(resultId);
         
 //     let result = arr.map((ittem) => ittem.id).reduce((obd) => ({
-//         obd: items,
+//         obd: arrs,
 //         }));
 //         console.log(result);
 // }
@@ -161,24 +255,25 @@ for (let keus of users) {
 // ];
 // let newArr = [];
 
-// function itemCheck(item) {
+// function arrCheck(arr) {
 //         let result = [];
 
-//     // result = item.map((item) => item);
+//     // result = arr.map((arr) => arr);
         
-//     //     result.indexOf((item) === -1)
+//     //     result.indexOf((arr) === -1)
 //     //         result.filter();
-//         for (let key in item) {
-//             if (item.hasOwnProperty(key)) {
-//                 if (result.indexOf(item[key]) === -1) {
-//                     result.push(item[key]);
+
+//         for (let key in arr) {
+//             if (arr.hasOwnProperty(key)) {
+//                 if (result.indexOf(arr[key]) === -1) {
+//                     result.push(arr[key]);
 //                 }
 //             }
 //         }
 //         console.log(result);
 // }
 
-// itemCheck(tmpArray);
+// arrCheck(tmpArray);
 
 // function inict(arr) {
 
@@ -239,7 +334,7 @@ for (let keus of users) {
 
 // let arr = [ vasya, petya, masha ];
 
-// let result = arr.map((item) => item.age)
+// let result = arr.map((arr) => arr.age)
 //         let results = 0;
 
 //     for (let key of result) {
@@ -338,9 +433,9 @@ for (let keus of users) {
 // let users = [ vasya, petya, masha ];
 // console.log(users);
 
-// let user = users.map(item => ({
-//     fullName: `${item.name} ${item.surname}`,
-//     id:item.id,
+// let user = users.map(arr => ({
+//     fullName: `${arr.name} ${arr.surname}`,
+//     id:arr.id,
 // }));
 // console.log(user);
 
@@ -364,7 +459,7 @@ for (let keus of users) {
 // let users = [ vasya, petya, masha ];
 // let arrUsers = ['dasfd', 'dsaddsa', 'asddsa'];
 
-// let result = users.map((item) => item.name);
+// let result = users.map((arr) => arr.name);
 
 // console.log(result);
 // // console.log(result[1]);
@@ -626,7 +721,7 @@ for (let keus of users) {
 
 // function newArr(arr, a, b) {
 
-//     let result = arr.filter(item => (a <= item && item <= b));
+//     let result = arr.filter(arr => (a <= arr && arr <= b));
 
 //         return result;
 
@@ -634,8 +729,8 @@ for (let keus of users) {
     // arr.map((number) => (number <= a && number <= b)  )
 
 
-    // let result = arr.filter(item =>(a <= item && item <= b));
-    // let resulTwo = result.filter(item)
+    // let result = arr.filter(arr =>(a <= arr && arr <= b));
+    // let resulTwo = result.filter(arr)
 
     
 // }
@@ -644,7 +739,7 @@ for (let keus of users) {
 
 // function filterRangeInPlace(arr, a, b) {
 
-//     let pushSort = arr.filter(item=>(a <= item && item <= b));
+//     let pushSort = arr.filter(arr=>(a <= arr && arr <= b));
 //         console.log(pushSort);
 
 //     for (let key of pushSort) {
@@ -656,9 +751,9 @@ for (let keus of users) {
 
 // function art(arr, a, b) {
 
-//         let del = arr.filter((item => (a <= item && item >= b)));
+//         let del = arr.filter((arr => (a <= arr && arr >= b)));
 
-//         let result = arr.filter(item => (a <= item && item <= b));
+//         let result = arr.filter(arr => (a <= arr && arr <= b));
 
 //             if (result == a && result == b) {
 //                 newArr.push(result);
@@ -682,7 +777,7 @@ for (let keus of users) {
 
 // let arr = [5, 3, 8, 1, 3];
 
-// const filterArr = ((ars, a, b) => ars.filter(item =>(a <= item && item <= b )));
+// const filterArr = ((ars, a, b) => ars.filter(arr =>(a <= arr && arr <= b )));
 
 // let six = filterArr(arr, 1, 4);
 // console.log(six);
@@ -921,8 +1016,8 @@ for (let keus of users) {
 
 // ];
 
-// let searchUser = users.find(item => item.name == 'Немида');
-// let result = users.filter(item => item.id < 3);
+// let searchUser = users.find(arr => arr.name == 'Немида');
+// let result = users.filter(arr => arr.id < 3);
 
 // console.log(searchUser);
 // console.log(result.length);
