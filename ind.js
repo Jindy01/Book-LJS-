@@ -1,9 +1,73 @@
 'use strict';
 
-    //      TASK        //
+                     //      TASK        //
 
 //    !!!!      ПОВТОРИТЬ THIS. а то чё за бред ?    !!!       //
-//          Дорешать        //  
+
+                //          Дорешать        //  
+
+
+let messages = [
+  {text: "Hello", from: "John"},
+  {text: "How goes?", from: "John"},
+  {text: "See you soon", from: "Alice"}
+];
+
+
+let readMassages = new WeakSet();
+
+readMassages.add(messages[0]);
+readMassages.add(messages[1]);
+
+console.log(readMassages.has(messages[0]));
+    console.log(messages.shift(readMassages[2]));
+        console.log(readMassages);
+
+
+// function readMessage(arr) {
+    
+//     const newCollection = new WeakSet();
+
+//         for (let i = 0; i < arr.length; ++i) {
+//             newCollection.add(messages[i]);
+//                 console.log(newCollection.has(arr[i]));
+//         }
+// }
+
+// readMessage(messages);
+
+
+// console.log(readMassages.has(messages[1]));
+
+// readMassages.set(messages, '...');
+// console.log(readMassages.get(messages));
+
+// console.log(readMassages);
+
+
+
+// let newObj = { name: 'Art' };
+// let map = new WeakMap();
+
+// map.set(newObj, 'Что-то');
+
+//     newObj = null;
+//     console.log(map);
+
+// if (map.has(newObj)) {
+//     alert('Правда');
+// }
+
+
+
+
+// let john = { name: 'John' };
+
+// let weakMap = new WeakMap();
+// weakMap.set(john, 'Jonny');
+
+// console.log(weakMap);
+
 
 
 // let john = { name: 'John' };
