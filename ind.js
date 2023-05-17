@@ -6,22 +6,34 @@
 
                 //          Дорешать        //  
 
+let отметка = 1;
 
-let messages = [
-  {text: "Hello", from: "John"},
-  {text: "How goes?", from: "John"},
-  {text: "See you soon", from: "Alice"}
-];
+// let messages = [
+//   {text: "Hello", from: "John"},
+//   {text: "How goes?", from: "John"},
+//   {text: "you soon", from: "Alice"},
+//   {text: "See you ", from: "Alice"},
+//   {text: "See soon", from: "Alice"},
+// ];
+
+// // let jonn = { name: 'Jonn'};
+
+// let newTask = new WeakMap();
+
+// newTask.set(messages[0], 'information');
+//     console.log(newTask.get(messages[0]));
 
 
-let readMassages = new WeakSet();
 
-readMassages.add(messages[0]);
-readMassages.add(messages[1]);
+// let readMassages = new WeakSet();
 
-console.log(readMassages.has(messages[0]));
-    console.log(messages.shift(readMassages[2]));
-        console.log(readMassages);
+// readMassages.add(messages[0]);
+// readMassages.add(messages[1]);
+
+// console.log(readMassages.has(messages[0]));
+//     console.log(messages.shift(readMassages[2]));
+//         console.log(readMassages);
+
 
 
 // function readMessage(arr) {
@@ -32,9 +44,11 @@ console.log(readMassages.has(messages[0]));
 //             newCollection.add(messages[i]);
 //                 console.log(newCollection.has(arr[i]));
 //         }
+
 // }
 
 // readMessage(messages);
+
 
 
 // console.log(readMassages.has(messages[1]));
