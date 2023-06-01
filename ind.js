@@ -8,6 +8,22 @@
 
 let отметка = 1;
 
+const returnObject = {
+    name: 'Artem',
+    age: 19,
+};
+
+
+function imReturn(obj) {
+
+    alert(`${obj.name} Вернулся !`)
+}
+
+imReturn(returnObject);
+
+
+
+
 // let messages = [
 //   {text: "Hello", from: "John"},
 //   {text: "How goes?", from: "John"},
