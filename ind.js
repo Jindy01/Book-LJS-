@@ -6,20 +6,78 @@
 
                 //          Дорешать        //  
 
-let отметка = 1;
 
-const returnObject = {
-    name: 'Artem',
-    age: 19,
-};
+            
+                
+let mapka = new Map();
+
+mapka.set('String', 'string1')
+.set(1, 'num1')
+.set(true, 'bolean');
 
 
-function imReturn(obj) {
+console.log(mapka.size);
 
-    alert(`${obj.name} Вернулся !`)
-}
 
-imReturn(returnObject);
+// let user = prompt('Как вас зовут ?');
+
+// function checkUser(args) {
+
+//     let newArr = {};
+
+//     if (args === '') {
+//         return false;
+//     } else {
+//         newArr.args;
+//     };
+//         console.log(newArr);
+// }
+
+// checkUser(user);
+// console.log(user);
+                
+
+// const obj = {};
+
+// function setObject(obj, name, old) {
+    
+//     obj.name = name;
+//     obj.old = old;
+    
+// }
+
+// setObject(obj, 'Артём', 19);
+// console.log(obj);
+
+
+
+// function isNumb(simbol) {
+
+//     if (Number(simbol)) {
+//         alert('Число!');
+//     } else {
+//         alert('Строка!');
+//     }
+
+// }
+
+// isNumb('a');
+
+
+// let отметка = 1;
+
+// const returnObject = {
+//     name: 'Artem',
+//     age: 19,
+// };
+
+// function imReturn(obj) {
+
+
+//     alert(`${obj.name} Вернулся !`)
+// }
+
+// imReturn(returnObject);
 
 
 
