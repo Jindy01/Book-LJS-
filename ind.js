@@ -4,19 +4,65 @@
 
 //    !!!!      ПОВТОРИТЬ THIS. а то чё за бред ?    !!!       //
 
-                //          Дорешать        //  
+let visitMap = new Map();
+let users = ['joo', 'joo'];
+
+function names(user) {
+    let count = visitMap.get(user) || 0 ;
+    
+    visitMap.set(user, count + 1);
+    console.log(count);
+}
+
+names(users);
+console.log(visitMap.get());
+console.log(count);
 
 
-            
-                
-let mapka = new Map();
+// let notIternObj = {
+//     name: 'alert',
+//     namber: 322,
+//     beLike: true
+// }
 
-mapka.set('String', 'string1')
-.set(1, 'num1')
-.set(true, 'bolean');
+// let iternObjTest = ['mass', 'mass1', 'mass2'];
+
+//     iternObjTest.forEach((value, index) => {
+
+//         console.log(value, index);
+//     })
 
 
-console.log(mapka.size);
+// let setObject = new Set(iternObjTest);
+//     console.log(setObject);
+// let testResult = {};
+
+// //      Клолекция       //
+// let param = 'Ind';
+
+// let mapka = new Map();
+// mapka.set('String', 'string1')
+// .set(1, param)
+// .set(true, 'bolean')
+// .set(1.99, 'prise');
+// //      Вывод
+// console.log(mapka.get(1));
+// console.log( mapka.has(1));
+
+// let result = Object.fromEntries(mapka.entries());
+//     console.log(result);
+
+// for (let keyS of mapka.keys()) {
+//     console.log(keyS);
+// }
+
+// let chekMap = {
+//     name: 'Alert',
+//     age: 19,
+// };
+
+// let testMap = new Map(Object.entries(chekMap));
+// let result = Object.fromEntries(testMap);
 
 
 // let user = prompt('Как вас зовут ?');
