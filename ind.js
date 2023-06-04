@@ -4,19 +4,174 @@
 
 //    !!!!      ПОВТОРИТЬ THIS. а то чё за бред ?    !!!       //
 
-let visitMap = new Map();
-let users = ['joo', 'joo'];
 
-function names(user) {
-    let count = visitMap.get(user) || 0 ;
+// ({title, width, height} = {title: "Menu", width: 200, height: 100});
+
+let newObj = {
+    title: undefined,
+    post: 41,
+    namePost: 'CCV',
+};
+
+
+function alertName({
+    title = 'news',
+    wight: x = 100,
+    heihdt: c = 200,
+    namePost: [item1],
+}) {
+    alert(title);
+    alert(c);
+    alert(x);
     
-    visitMap.set(user, count + 1);
-    console.log(count);
+
 }
 
-names(users);
-console.log(visitMap.get());
-console.log(count);
+alertName(newObj);
+
+
+
+// let option = {
+//     size: {
+//         width: 200,
+//         height: 150,
+//     },
+//     item: ['Cake', 'Dotin'],
+//     exstra: true,
+// };
+
+// let {
+//     size: {
+//         width,
+//         height,
+//     },
+//     item: [item1, item2],
+//     title = 'Menu'
+// } = option;
+
+// console.log(item2);
+
+
+
+
+// let option = {
+//     title: "Menu",
+//     width: 100,
+//     height: 200
+// };
+
+// let {title: x, width, height} = option;
+//     console.log(x);
+
+
+
+// let [name = prompt('Name &'), sureName = prompt('Sure')] = [['Jutsu'], [prompt('&')]];
+
+// console.log(sureName);
+
+// let [user, uses, ...rest] = ['as', 'dsa', 'fasf', 'rest'];
+
+// console.log(rest);
+
+
+// let [a, b, c] = 'abc';
+// let [o, t, f] = new Set([1, 2, 3]);
+//     console.log(t);
+
+
+
+// let arr = ['Kaya', 'Moa'];
+
+// let [first, second] = arr;
+// console.log(arr);
+
+
+// let user = {
+//     name: 'John',
+//     agqse: 30,
+//     aqge: 30,
+//     s: 30,
+// };
+
+// function count(user) {
+//     return Object.entries(user).length;
+// }
+
+// alert( count(user) ); // 2
+
+
+
+// Object.values((()))
+// Object.entries();
+
+// let salaries = {
+//     "John": 100,
+//     "Pete": 300,
+//     "Mary": 250
+// };
+
+// function sumSalaries(salaries) {
+
+//     let resultCost = 0;
+//     for (let key of Object.values(salaries)) {
+//         resultCost += key;
+//     };
+//     return resultCost;
+// }
+// console.log(sumSalaries(salaries));
+// alert(sumSalaries(salaries));
+
+
+
+// let prises = {
+//     banana: 4,
+//     or: 2,
+//     ap: 6,
+// };
+
+// let doublePrice = Object.fromEntries(
+//     Object.entries(prises).map(([key, value]) => [key, value * 2])
+// );
+// console.log(doublePrice);
+
+// let objArr = [['value', 4], ['values'], ['arrs']];
+// let result = Object.fromEntries(objArr);
+// console.log(result);
+
+
+
+// let testUset = {
+//     name: 'Konn',
+//     age: 23,
+//     car: true,
+// };
+
+// // console.log(Object.keys(testUset));
+// // console.log(Object.values(testUset));
+// // console.log(Object.entries(testUset));
+
+// for (let key of Object.entries(testUset)) {
+//     console.log(key);
+// }
+
+
+// let visitMap = new Map();
+
+// let joo = {name: 'joo'};
+// let milk = {name: 'milk'};
+// let joen = {name: 'joen'};
+// let users = [joo, milk, joen];
+
+// function names(user) {
+
+//     let count = visitMap.get(user) || 0 ;
+//     let result = visitMap.set(user, count + 1);
+//     console.log(result);
+// }
+
+// names(users);
+// console.log(visitMap.get());
+
 
 
 // let notIternObj = {
