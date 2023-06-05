@@ -1,33 +1,181 @@
 'use strict';
-
-                     //      TASK        //
-
+//                           TASK                                //
 //    !!!!      ПОВТОРИТЬ THIS. а то чё за бред ?    !!!       //
 
-
-// ({title, width, height} = {title: "Menu", width: 200, height: 100});
-
-let newObj = {
-    title: undefined,
-    post: 41,
-    namePost: 'CCV',
+let room = {
+  number: 23
 };
 
+let meetup = {
+  title: "Совещание",
+  occupiedBy: [{name: "Иванов"}, {name: "Петров"}],
+  place: room
+};
 
-function alertName({
-    title = 'news',
-    wight: x = 100,
-    heihdt: c = 200,
-    namePost: [item1],
-}) {
-    alert(title);
-    alert(c);
-    alert(x);
+// цикличные ссылки
+room.occupiedBy = meetup;
+meetup.self = meetup;
+
+let result = JSON.stringify(meetup, function replacer(key, value) {
+      // console.log((`${key}: ${value}`)); 
+    return (key != "" && value == meetup) ? undefined : value;
+});
+
+result = JSON.parse(result);
+  console.log(result);
+
+
+
+// let user = {
+//   name: "Василий Иванович",
+//   age: 35
+// };
+
+// user = (JSON.stringify(user));
+// console.log(JSON.parse(user));
+
+
+
+// let room = {
+//   number: 23,
+//   toJSON() {
+//     return this.number;
+//   }
+// };
+
+// let meetup = {
+//   title: "Conference",
+//   room
+// };
+
+// console.log(( JSON.stringify(room) )); // 23
+
+// console.log(( JSON.stringify(meetup) ));
+
+
+
+// let room = {
+//   number: undefined,
+// };
+
+// console.log(room);
+
+// let meetup = {
+//   title: "Conference",
+//   participants: [{name: "John"}, {name: "Alice"}],
+//   place: room 
+// };
+
+// alert( JSON.stringify(meetup, function replacer(key, value) {
+//   console.log((`${key}: ${value}`));
+//   return (key == 'occupiedBy') ? undefined : value;
+// }));
+
+// room.occupied = meetup;
+
+// console.log('1' + room);
+// console.log(JSON.stringify(meetup, ['title', 'participants', 'place', 'name', 'number']));
+
+
+
+// let student = {
+//     name: 'John',
+//     age: 30,
+//     isAdmin: false,
+//     courses: ['html', 'css', 'js'],
+//     wife: null
+// };
+  
+// let json = JSON.stringify(student);
+//     console.log(json);
+
+//         json = JSON.parse(json);
+//             console.log(json);
+
+
+// let room = {
+//   number: 23
+// };
+
+// let meetup = {
+//   title: "Conference",
+//   participants: ["john", "ann"]
+// };
+
+// meetup.place = room;       // meetup ссылается на room
+// room.occupiedBy = meetup;
+    
+//     console.log(room);  
+//     console.log(meetup);
+
+
+// let salaries = {
+//     "Johns": 700,
+//     "John": 100,
+//     "Pete": 300,
+//     "Marys": 1250,
+//     "Petes": 600,
+//     "Mary": 250,
+//     "Johnss": 900,
+// };
+
+// function getMoney(obj) {
+
+//     let max = 0;
+//     let maxName = null;
+
+//     for (let [value, cost] of Object.entries(obj)) {
+//         if (max < cost) {
+//             max = cost;
+//             maxName = value;
+//         }
+//     }
+//     return maxName;
+// }
+
+// alert (getMoney(salaries));
+
+
+// let user = {
+//     name: "John",
+//     years: 30
+// };
+
+
+// let { 
+//     name: x = 'NaNname' ,
+//     years: age ,
+//     isAdmin = false,
+// } = user;
+
+// console.log(isAdmin);
+
+// let name = undefined;
+
+
+
+
+// let newObj = {
+//     title: undefined,
+//     post: 41,
+//     namePost: 'CCV',
+// };
+
+
+// function alertName({
+//     title = 'news',
+//     wight: x = 100,
+//     heihdt: c = 200,
+//     namePost: [item1],
+// }) {
+//     alert(title);
+//     alert(c);
+//     alert(x);
     
 
-}
+// }
 
-alertName(newObj);
+// alertName(newObj);
 
 
 
