@@ -2,29 +2,49 @@
 //                           TASK                                //
 //    !!!!      ПОВТОРИТЬ THIS. а то чё за бред ?    !!!       //
 
-let room = {
-  number: 23
-};
+function recurs(x, n) {
+    if (n == 1) {
+        return x;
+    } else {
+        return x * recurs(x, n - 1);
+    }
 
-let meetup = {
-  title: "Совещание",
-  occupiedBy: [{name: "Иванов"}, {name: "Петров"}],
-  place: room
-};
+}
 
-// цикличные ссылки
-room.occupiedBy = meetup;
-meetup.self = meetup;
-
-let result = JSON.stringify(meetup, function replacer(key, value) {
-      // console.log((`${key}: ${value}`)); 
-    return (key != "" && value == meetup) ? undefined : value;
-});
-
-result = JSON.parse(result);
-  console.log(result);
+function recers2(arr) {
 
 
+}
+
+console.log(recurs(2, 3));
+
+
+
+// let room = {
+//   number: 23
+// };
+
+// let meetup = {
+//   title: "Совещание",
+//   occupiedBy: [{name: "Иванов"}, {name: "Петров"}],
+//   place: room
+// };
+
+// // цикличные ссылки
+// room.occupiedBy = meetup;
+// meetup.self = meetup;
+
+//   console.log(meetup);
+
+// let result = JSON.stringify(meetup, function replacer(key, value) {
+//       console.log((`${key}: ${value}`)); 
+//     return (key != "" && value == meetup) ? undefined : value;
+// });
+
+// result = JSON.parse(result);
+//   console.log(result);
+
+ 
 
 // let user = {
 //   name: "Василий Иванович",
