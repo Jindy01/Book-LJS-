@@ -2,21 +2,45 @@
 //                           TASK                                //
 //    !!!!      ПОВТОРИТЬ THIS. а то чё за бред ?    !!!       //
 
-function recurs(x, n) {
-    if (n == 1) {
-        return x;
-    } else {
-        return x * recurs(x, n - 1);
-    }
-
-}
-
-function recers2(arr) {
 
 
-}
+// function itteration(x) {
 
-console.log(recurs(2, 3));
+//     let number = x;
+//     let result = 0;
+
+//     for (let i = 0; i < x; ++i) {
+//         result += number; 
+//         number = number - 1;
+//     }
+//     return result;
+// }
+
+// console.log(itteration(100));
+
+
+
+// let a = (x, n) => (n == 1) ? x : (x * a(x, n - 1));
+
+// console.log(a(3, 5))
+
+
+
+// function recurs(x, n) {
+//     if (n == 1) {
+//         return x;
+//     } else {
+//         return x * recurs(x, n - 1);
+//     }
+
+// }
+
+// function recers2(arr) {
+
+
+// }
+
+// console.log(recurs(2, 3));
 
 
 
