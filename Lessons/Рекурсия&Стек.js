@@ -1,32 +1,65 @@
-'use strict';
 
-let list = {
-  value: 1,
-  next: {
-    value: 2,
-      next: {
-      value: 3,
-      next: {
-        value: 4,
-        next: null
-      }
-    }
-  }
-};
 
-function printList(a) {
-  let tmp = list;
+// let list = {
+//   value: 1,
+//   next: {
+//     value: 2,
+//       next: {
+//       value: 3,
+//       next: {
+//         value: 4,
+//         next: null
+//       }
+//     }
+//   }
+// };
+
+
+
+// function printList(list) {
+//   let arr = [];
+//   let tmp = list;
+
+//     while(tmp) {
+//       arr.push(tmp.value)
+//       tmp = tmp.next;
+//     }
+
+//     for (let i = arr.length - 1; i => 0; i--) {
+//       alert(arr[i]);
+//       if (arr[i] === undefined) {
+//         break;
+//       }
+//     }
+
+// }
+
+// printList(list);
+
+
+
+// function recursionList(x) {
+//   alert(x.value);
+
+//     if (x.next) {
+//       recursionList(x.next)
+//     }
+
+// }
+// recursionList(list);
+
+
+// function printList(a) {
+//   let tmp = list;
   
-    while (tmp) {
-      console.log(tmp.value);
-      tmp = tmp.next;
-      
-    }
+//     while (tmp) {
+//       console.log(tmp.value);
+//       tmp = tmp.next;
+//     }
 
-}
+// }
 
-console.log(printList(list));
-
+// console.log(printList(list));
 
 
 
