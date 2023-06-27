@@ -1,12 +1,23 @@
 'use strict';
 
-function bind() {
-    
-    return function logPerson() {
-        console.log(`Person: ${this.name} , age:${this.age}, job:${this.name}`);
-    }
-}
+// function bind(context, fun) {
 
+//     return function(...args) {
+//         fun.apply(context, args)
+//     }
+// }
+
+// function logPerson() {
+//     return console.log(`Person: ${this.name}, age: ${this.age}, job: ${this.job} `);
+// }
+
+
+const person1 = { name:'Jony', age: 17, job:  'cock' }
+const person2 = { name: 'Kelly', age:26, job: 'work' }
+
+
+let result = bind(person1, logPerson)(); // Основа person1, person2;
+console.log(result);
 
 
 
