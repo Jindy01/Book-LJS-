@@ -1,5 +1,33 @@
 'use strict';
 
+let numbers = [1,2,3,4,5,6,7,8,9];
+
+// let result = numbers.filter((a, b) => a >= 3 && 5 >= b);
+// console.log(result);
+
+function inArray(arr, b) {
+
+    return function(a) {
+        return arr.filter(a => a === b)
+    }
+}
+
+let result2 = numbers.filter(a => a ===);
+
+
+
+
+// function sum(a){
+
+//     return function(b) {
+//         return a + b;
+//     };
+// }
+
+// alert(sum(4)(5));
+
+
+
 // function bind(context, fun) {
 
 //     return function(...args) {
@@ -12,12 +40,12 @@
 // }
 
 
-const person1 = { name:'Jony', age: 17, job:  'cock' }
-const person2 = { name: 'Kelly', age:26, job: 'work' }
+// const person1 = { name:'Jony', age: 17, job:  'cock' }
+// const person2 = { name: 'Kelly', age:26, job: 'work' }
 
 
-let result = bind(person1, logPerson)(); // Основа person1, person2;
-console.log(result);
+// let result = bind(person1, logPerson)(); // Основа person1, person2;
+// console.log(result);
 
 
 
