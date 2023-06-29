@@ -1,20 +1,94 @@
 'use strict';
 
-let numbers = [1,2,3,4,5,6,7,8,9];
+function makeArmy() {
+  let shooters = [];
 
-// let result = numbers.filter((a, b) => a >= 3 && 5 >= b);
-// console.log(result);
+  for(let i = 0; i < 10; ++i) {
+    let shooter = function() { // функция shooter
+      alert( i ); // должна выводить порядковый номер
+    };
+    shooters.push(shooter);
+  }
 
-function inArray(arr, b) {
-
-    return function(a) {
-        return arr.filter(a => a === b)
-    }
+  return shooters;
 }
 
-let result2 = numbers.filter(a => a ===);
+let army = makeArmy();
+
+army[0](); // у 0-го стрелка будет номер 10
+army[5](); // и у 5-го стрелка тоже будет номер 10
 
 
+
+// let users = [
+//   { name: "John", age: 20, surname: "Johnson" },
+//   { name: "Pete", age: 18, surname: "Peterson" },
+//   { name: "Ann", age: 19, surname: "Hathaway" }
+// ];
+
+// function byField(arr) {
+//     return function(a, b) {
+//        return a[arr] > b[arr] ? 1 : -1;
+//     }
+// }
+
+// users.sort(byField('name'));
+// users.map(user => alert(user.name));
+
+
+
+// function inArray(arr) {
+
+//     return function(x) {
+//         return arr.includes(x);
+//     };
+// }
+
+// let arr = [1,2,3,4,5,6,7,8,9];
+// alert( arr.filter(inArray([1, 2, 6])) );
+
+
+
+// function inBetween(a, b) {
+
+//     return function(x) {
+//         return x >= a && x <= b;
+//     };
+// }
+
+// alert(arr.filter(inBetween(3, 6)) )
+
+
+
+// function inBetween(a, b) {
+//     let funcArr = [];
+
+//     for(let i = 1; i <= b; ++i) {
+
+//         if (i >= a && i <= b) {
+//             funcArr.push(i)
+//         } 
+//     }
+//     return funcArr;
+// }
+
+// alert(inBetween(3, 6))
+
+
+
+// let returted = arr.filter((a, b) => 3 <= a && 6 > b);
+//     console.log(returted);
+
+
+// function getFilter(x) {
+//     let i = x;
+
+//     return function() {
+//         return alert(i);
+//     } 
+// }
+
+// getFilter()()
 
 
 // function sum(a){
