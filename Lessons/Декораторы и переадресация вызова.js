@@ -1,32 +1,174 @@
 'use strict';
 
-let privateValue = (x) => {
-    // Cложна - Сложна ...
-        return x * 2;
+
+function alert(x) {
+    alert(x);
 }
 
-const cachingDecorrator = (func) => {
-    let cache = new Map();
+function debounce(f, ms) {
 
-    return function(x) {
-        alert(`cache ${x}`);
-        if(cache.has(x)) {
-            return cache.get(x);
-        }
+let booleanParametr = true;
 
-        let result = func(x);
-        cache.set(x, result);
-        alert('not cache')
+setInterval(function() {
+  if (booleanParametr) {
+    booleanParametr = false;
+  } else {
+        booleanParametr = true;
+      }
+    }, 1000000000);
+
+return function() {
+  setTimeout(() => f.apply(this, arguments), ms);
+
+}};
+
+let f = debounce.bind('s', 1000);
+
+f(1); // выполняется немедленно
+f(2)
+
+
+
+// setTimeout(function() {
+//     if (booleanParametr) {
+//       booleanParametr = false;
+//     } else {
+//       setInterval(function() {
+//         if (booleanParametr) {
+//           booleanParametr = false;
+//         } else {
+//           booleanParametr = true;
+//         }
+//       }, 1000);
+//     }
+//   }, 1000);
+
+
+// function fun(x) {
+//     alert(x);
+// }
+
+// function delay(func, ms) {
+
+//     return function() {
+//         setTimeout(() => func.apply(this, arguments), ms);
+//     }   
+// }
+
+// let f4000 = delay(fun, 4000);
+
+// f4000("test");
+
+
+
+// function work(a, b) {
+//     console.log(a + b);
+// }
+
+// function spy(func) {
+    
+//     function wrapper(...args) {
+//         wrapper.calls.push(args);
+//         return func.apply(this, args);
+//     }
+
+//     wrapper.calls = [];
+//     return wrapper;
+// }
+
+// work = spy(work);
+
+// work(1, 7);
+// work(5, 9);
+
+// for (let args of work.calls) {
+//   alert( 'call:' + args.join() ); // "call:1,2", "call:4,5"
+// }
+
+
+
+// let cals = []; 
+
+// function work(a, b) {
+//     alert(a + b);
+//     cals.push([a, b]);
+// }
+
+// work(1, 6);
+
+
+
+// let hashes = [];
+
+// let sum = {
+//     slow(min, max) {
+//         alert(`Call ${min}, ${max}`);
+//         return min + max;
+//     }
+// };  
+
+// let calls = [];
+
+// function cachingDecorator(func, hash) {
+//     let cache = new Map();
+
+//     return function() {
+//         let key = hash(arguments);
+//         if (cache.has(key)) {
+//             return cache.get(key);
+//         }
+//         let result = func.call(this, ...arguments);
+//         cache.set(key, result);
+//             calls.push([this, ...arguments])
+//         return result;
+//     };
+// }
+
+// function hash(args) {
+//     return args[0] + ',' + args[1];
+// }
+
+// console.log(calls)
+
+// sum.slow = cachingDecorator(sum.slow, hash);
+
+// alert( sum.slow(3, 5, 7, 8) );
+// alert( sum.slow(4, 5, 7, 8) )
+// alert( sum.slow(5, 5, 7, 8) )
+// alert( sum.slow(9, 5, 7, 8) )
+// alert( sum.slow(3, 5, 7, 8) ) // работает
+// alert( "Again " + sum.slow(3, 5, 7, 8) );
+
+
+
+
+// let privateValue = (x) => {
+//     // Cложна - Сложна ...
+//         return x * 2;
+// }
+
+// const cachingDecorrator = (func) => {
+//     let cache = new Map();
+
+//     return function(x) {
+//         alert(`cache ${x}`);
+//         if(cache.has(x)) {
+//             return cache.get(x);
+//         }
+
+//         let result = func(x);
+//         cache.set(x, result);
+//         alert('not cache')
         
-        return result;
-    }
-}  
+//         return result;
+//     }
+// }  
 
-privateValue = cachingDecorrator(privateValue);
+// privateValue = cachingDecorrator(privateValue);
 
-privateValue(4);
-privateValue(4);
-privateValue(4);
+// privateValue(4);
+// privateValue(4);
+// privateValue(4);
 
 
 
