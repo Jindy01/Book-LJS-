@@ -1,26 +1,61 @@
-'use strict';
+// function askPassword(ok, fail) {
+//   let password = prompt("Password?", '');
+//   if (password == "rockstar") ok();
+//   else fail();
+// }
 
-function askPassword(ok, fail) {
-  let password = prompt("Password?", '');
-  if (password == "rockstar") ok();
-  else fail();
-}
+// let user = {
+//   name: 'John',
 
-let user = {
-  name: 'Вася',
+//   login(result) {
+//     alert( this.name + (result ? ' logged in' : ' failed to log in') );
+//   }
+// };
 
-  loginOk() {
-    alert(`${this.name} logged in`);
-  },
+// askPassword(user.login.bind(user, true), user.login.bind(user, false));
 
-  loginFail() {
-    alert(`${this.name} failed to log in`);
-  },
 
-};
+
+// this.x = 9;
+
+// let modul = {
+//   x: 81,
+//   getX: function() {return this.x}
+// };
+
+// console.log(modul.getX());
+
+
+
+// function returnNumb(x, y) {
+//   return y + x;
+// }
+
+// let func = returnNumb.bind(null, 5)
+// console.log(func(7))
+
+
+
+// function askPassword(ok, fail) {
+//   let password = prompt("Password?", '');
+//   if (password == "rockstar") ok();
+//   else fail();
+// }
+
+// let user = {
+//   name: 'Вася',
+
+//   loginOk() {
+//     alert(`${this.name} logged in`);
+//   },
+
+//   loginFail() {
+//     alert(`${this.name} failed to log in`);
+//   },
+
+// };
   
-askPassword(user.loginOk.bind(user), user.loginFail.bind(user));
-
+// askPassword(user.loginOk.bind(user), user.loginFail.bind(user));
 
 
 
