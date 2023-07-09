@@ -1,9 +1,3 @@
-
-//                           TASK                                //
-//    !!!!      ПОВТОРИТЬ THIS. а то чё за бред ?    !!!       //
-
-
-
 // function itteration(x) {
 
 //     let number = x;
