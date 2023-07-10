@@ -1,26 +1,73 @@
-'use strict';
+//      Правильный вариант задачи       //
+// let dictionary = Object.create(null , {
+//     toString: {
+//         value() {
+//             return Object.keys(this).join();
+//         },
+//         enumerable: true,
+//     },
+//     toName: {
+//         value: {
+//             value:'Lolla'
+//         },
+//         enumerable: true,
+//     }
+    
+// });
 
-let animal = {
-    eats: true,
-};
+//      Неправильный вариант (Мой)
+// dictionary.toString(Object.keys().join(', ')) = 
+// Object.defineProperty(
+//     dictionary, 'toString', {
+//     enumerable: false,
+// });
+//      //      //      //      //      //      //  
 
-let rabbit = Object.create(animal, {
-    jumps: {
-        value: true,
-    }
-});
+// dictionary.apple = 'Apple';
+// dictionary.__proto__ = 'test';
 
-let testObj = {
-    animal: true,
-    polution: {
-        jump: true,
-    },
-};
+// for(let key in dictionary) {
+//     console.log(`Цикл: ${key}`);
+// };
 
-let clone = Object.create(Object.getPrototypeOf(testObj), Object.getOwnPropertyDescriptor(testObj));
+// alert(dictionary);
 
-console.log(clone);
 
-console.log(rabbit.jumps);
-console.log(Object.getPrototypeOf(rabbit) === animal);
+
+// let testUser = Object.create(null);
+
+// let testUser = {
+//     name: "jONN",
+//     age: 18,
+// };
+
+// testUser.hello = 'Привет';
+
+// console.log(Object.keys(testUser));
+
+
+
+// let animal = {
+//     eats: true,
+// };
+
+// let rabbit = Object.create(animal, {
+//     jumps: {
+//         value: true,
+//     }
+// });
+
+// let testObj = {
+//     animal: true,
+//     polution: {
+//         jump: true,
+//     },
+// };
+
+// let clone = Object.create(Object.getPrototypeOf(testObj), Object.getOwnPropertyDescriptor(testObj));
+
+// console.log(clone);
+
+// console.log(rabbit.jumps);
+// console.log(Object.getPrototypeOf(rabbit) === animal);
 // Object.setPrototypeOf(rebbit, {});
