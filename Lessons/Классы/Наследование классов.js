@@ -1,8 +1,39 @@
 'use strict';
 
+let animal = {
+    name: 'Животное',
+        eat() {
+            console.log(`${this.name} кушает`);
+        }
+};
+
+let rabbitObj = {
+    __proto__: animal,
+    name: 'Кролик',
+    eat() {
+        super.eat()
+    }
+};
+
+let longEar = {
+    __proto__: rabbitObj,
+    name: 'Ушастик',
+    eat() {
+        super.eat();
+    }
+};
+
+longEar.eat();
+
+
+
 class Animal {
+    showName() {
+        // console.log('animal'); !!
+    }
 
     constructor(name) {
+        this.showName();
         this.speed = 0;
         this.name = name;
     }
@@ -23,6 +54,10 @@ class Rabbit extends Animal {
         this.earLenght = earLenght;
     }
 
+    showName() {
+        // console.log('rabbit');
+    }
+
     hide() {
         console.log(`${this.name} прячется`);
     }
@@ -34,11 +69,10 @@ class Rabbit extends Animal {
 }
 
 let rabbit = new Rabbit('Кролик');
-let wolf = new Animal('Белый Волк')
-console.log(rabbit.name);
 
-console.log(rabbit.run(5));
-console.log(rabbit.stop());
+new Animal();
+new Rabbit();
+
 
 
 // function newClass(phrase) {
