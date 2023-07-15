@@ -1,5 +1,10 @@
 'use strict';
 
+function Reform() {
+
+}
+
+
 let animal = {
     name: 'Животное',
         eat() {
