@@ -1,82 +1,95 @@
-'use strict';
+// class Animal {
 
-function Reform() {
+//   constructor(name) {
+//     this.name = name;
+//   }
 
-}
+// }
 
+// class Rabbit extends Animal {
+//     constructor(name) {
+//     super(name);
+//     this.created = Date.now();
+//   }
+// }
 
-let animal = {
-    name: 'Животное',
-        eat() {
-            console.log(`${this.name} кушает`);
-        }
-};
-
-let rabbitObj = {
-    __proto__: animal,
-    name: 'Кролик',
-    eat() {
-        super.eat()
-    }
-};
-
-let longEar = {
-    __proto__: rabbitObj,
-    name: 'Ушастик',
-    eat() {
-        super.eat();
-    }
-};
-
-longEar.eat();
+// let rabbit = new Rabbit("Белый кролик"); // Error: this is not defined
+// console.log(rabbit.name);
 
 
 
-class Animal {
-    showName() {
-        // console.log('animal'); !!
-    }
+// let animal = {
+//     name: 'Животное',
+//         eat() {
+//             console.log(`${this.name} кушает`);
+//         }
+// };
 
-    constructor(name) {
-        this.showName();
-        this.speed = 0;
-        this.name = name;
-    }
-    run(speed) {
-        this.speed = speed;
-        console.log(`${this.name} бежит / скорость ${this.speed}`);
-    }
-    stop() {
-        this.speed = 0;
-        console.log(`${this.name} стоит`);
-    }
-}
+// let rabbitObj = {
+//     __proto__: animal,
+//     name: 'Кролик',
+//     eat() {
+//         super.eat()
+//     }
+// };
 
-class Rabbit extends Animal {
+// let longEar = {
+//     __proto__: rabbitObj,
+//     name: 'Ушастик',
+//     eat() {
+//         super.eat();
+//     }
+// };
 
-    constructor(name, earLenght) {
-        super(name);
-        this.earLenght = earLenght;
-    }
+// longEar.eat();
 
-    showName() {
-        // console.log('rabbit');
-    }
 
-    hide() {
-        console.log(`${this.name} прячется`);
-    }
 
-    stop() {
-        this.hide();
-        super.stop();
-    }
-}
+// class Animal {
+//     showName() {
+//         // console.log('animal'); !!
+//     }
 
-let rabbit = new Rabbit('Кролик');
+//     constructor(name) {
+//         this.showName();
+//         this.speed = 0;
+//         this.name = name;
+//     }
+//     run(speed) {
+//         this.speed = speed;
+//         console.log(`${this.name} бежит / скорость ${this.speed}`);
+//     }
+//     stop() {
+//         this.speed = 0;
+//         console.log(`${this.name} стоит`);
+//     }
+// }
 
-new Animal();
-new Rabbit();
+// class Rabbit extends Animal {
+
+//     constructor(name, earLenght) {
+//         super(name);
+//         this.earLenght = earLenght;
+//     }
+
+//     showName() {
+//         // console.log('rabbit');
+//     }
+
+//     hide() {
+//         console.log(`${this.name} прячется`);
+//     }
+
+//     stop() {
+//         this.hide();
+//         super.stop();
+//     }
+// }
+
+// let rabbit = new Rabbit('Кролик');
+
+// new Animal();
+// new Rabbit();
 
 
 
