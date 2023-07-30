@@ -1,17 +1,22 @@
-
-function ReadingСharacters(string) {
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// function ReadingСharacters(string) {
     
-    let grandTotal = 0;
-}
+//     let grandTotal = 0;
+    
+//     for(let key of string) {
+//         console.log(key);
+//         if (key == 'I') {
+//             grandTotal + 1;
+//         } else if (key == 'V') {
+//             grandTotal + 5;
+//         }
+//     }
+//     console.log(grandTotal);
+// }
 
+// ReadingСharacters('IV')
 
-
-
-
-
-
-
-['I', 'V', 'X', 'L', 'C', 'D', 'M']
+// ['I', 'V', 'X', 'L', 'C', 'D', 'M']
 // Symbol       Value
 // I             1
 // V             5
@@ -20,6 +25,7 @@ function ReadingСharacters(string) {
 // C             100
 // D             500
 // M             1000
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
