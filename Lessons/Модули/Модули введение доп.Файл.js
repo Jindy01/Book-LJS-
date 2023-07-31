@@ -1,6 +1,5 @@
-'use scritct';
-
-
 export function sayHi(user) {
-    console.log(`Hello : ${user}`);
+    return `Hello : ${user}`;
 }
+
+// alert(sayHi('Aht'))

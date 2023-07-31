@@ -1,6 +1,3 @@
-'use strict';
+import { sayHi } from "./Модули введение доп.Файл";
 
-import { sayHi } from "Lessons/Модули/Модули введение доп.Файл.js";
-
-console.log(sayHi);
-sayHi('Artem');
+alert(sayHi('Ass'));
