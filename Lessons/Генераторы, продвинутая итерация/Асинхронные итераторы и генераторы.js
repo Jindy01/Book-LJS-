@@ -1,5 +1,3 @@
-'use strict';
-
 // async function* generateSequence(start, end) {
 //     for (let i = start; i <= end; i++) {
 //         await new Promise(resolve => setTimeout(resolve, 1000));
