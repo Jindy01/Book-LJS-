@@ -1,3 +1,6 @@
+// Return in the next day
+
+
 'use strict';
 let userNoAsk = {
     name: 'Вася',
