@@ -1,64 +1,93 @@
-// Return in the next day
-
-
 'use strict';
-let userNoAsk = {
-    name: 'Вася',
-    _pass: '****',
+
+
+// let userNoAsk = {
+//     name: 'Вася',
+//     _pass: '****',
+// };
+
+// userNoAsk = new Proxy(userNoAsk, {
+
+//     get(target, prop) {
+//         if(prop.startsWith('_')) {
+//             throw new Error('Error validation');
+//         } else {
+//             let value = target[prop];
+//             return (typeof value === 'function') ? value.bind(target) : value;
+//         }
+//     },
+
+//     set(target, prop, value) {
+//         if(prop.startsWith('_')) {
+//             throw new Error('Error validation');
+//         } else {
+//             target[prop] = value;
+//             return true;
+//         }
+//     },
+
+//     defineProperty(target, prop) {
+//         if(prop.startsWith('_')) {
+//             throw new Error('Error validation');
+//         } else {
+//             delete target[prop];
+//             return true;
+//         }
+//     },
+
+//     ownKeys(target) {
+//         return Object.keys(target).filter(key => !key.startsWith('_'));
+//     }
+// });
+
+// try {
+//   alert(userNoAsk._password); // Error: Отказано в доступе
+// } catch(e) { alert(e.message); }
+
+// // "set" не позволяет записать _password
+// try {
+//     userNoAsk._password = "test"; // Error: Отказано в доступе
+// } catch(e) { alert(e.message); }
+
+// // "deleteProperty" не позволяет удалить _password
+// try {
+//   delete userNoAsk._password; // Error: Отказано в доступе
+// } catch(e) { alert(e.message); }
+
+// // "ownKeys" исключает _password из списка видимых для итерации свойств
+// for(let key in userNoAsk) alert(key); // name
+
+
+let range = {
+    start: 1,
+    end: 10,
 };
 
-userNoAsk = new Proxy(userNoAsk, {
-
-    get(target, prop) {
-        if(prop.startsWith('_')) {
-            throw new Error('Error validation');
-        } else {
-            let value = target[prop];
-            return (typeof value === 'function') ? value.bind(target) : value;
-        }
-    },
-
-    set(target, prop, value) {
-        if(prop.startsWith('_')) {
-            throw new Error('Error validation');
-        } else {
-            target[prop] = value;
-            return true;
-        }
-    },
-
-    defineProperty(target, prop) {
-        if(prop.startsWith('_')) {
-            throw new Error('Error validation');
-        } else {
-            delete target[prop];
-            return true;
-        }
-    },
-
-    ownKeys(target) {
-        return Object.keys(target).filter(key => !key.startsWith('_'));
+range = new Proxy(range, {
+    has(target, prop) {
+        return prop => target.start && prop <= target.end;
     }
 });
 
-try {
-  alert(userNoAsk._password); // Error: Отказано в доступе
-} catch(e) { alert(e.message); }
-
-// "set" не позволяет записать _password
-try {
-    userNoAsk._password = "test"; // Error: Отказано в доступе
-} catch(e) { alert(e.message); }
-
-// "deleteProperty" не позволяет удалить _password
-try {
-  delete userNoAsk._password; // Error: Отказано в доступе
-} catch(e) { alert(e.message); }
-
-// "ownKeys" исключает _password из списка видимых для итерации свойств
-for(let key in userNoAsk) alert(key); // name
+console.log(5 in range);
 
 
+function delay(f, ms) {
+    return new Proxy(f, {
+        apply(target, thisArg, args) {
+            setTimeout(() => target.apply(thisArg, args), ms);
+        }
+    });
+}
+
+function say(us) {
+    console.log(`hi, ${us}`);
+}
+
+say = delay(say, 1000);
+
+console.log(say.length);
+say('dIma')
 
 
 let userTest = {};
