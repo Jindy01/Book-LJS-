@@ -1,5 +1,5 @@
-// export function sayHi(user) {
-//     return `Hello : ${user}`;
-// }
+export function sayHi(user) {
+    alert(`Hello ${user}`)
+}
 
 // alert(sayHi('Aht'))

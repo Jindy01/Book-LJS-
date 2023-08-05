@@ -1,4 +1,76 @@
-'use strict';
+//          ProxyTasks          //
+
+// let handlers = Symbol('handlers');
+
+// function makeObservable(target) {
+//     target[handlers] = [];
+
+//     target.observe = function(handler) {
+//         this[handlers].push(handler);
+//     }
+
+//     return new Proxy(target, {
+
+//         set(target, property, value, receiver) {
+//             let succes = Reflect.set(...arguments);
+//             if (succes) {
+//                 target[handlers].forEach(handler => handler(property, value));
+//             }
+//             return succes;
+//         }
+//     })
+// }
+
+// let user = {};
+// user = makeObservable(user);
+
+// user.observe((key, value) => {
+//     console.log(`set ${key}: ${value}`);
+// });
+
+// user.name = 'Koll'
+// console.log(user);
+
+
+// let arr = [1, 2, 3];
+
+// arr = new Proxy(arr, {
+
+//     get(arr, prop, receiver) {
+//         if (prop < 0) 
+//             return arr[arr.length + +prop];
+//         return Reflect.get(arr, prop, receiver);
+//     }
+// });
+
+// console.log(arr[-1])
+// console.log(arr[-2])
+
+
+// let user = {
+//     name: 'Jon',
+// };
+
+// function wrap(target) {
+//     return new Proxy(target, {
+        
+//         get(target, prop, receiver) {
+//             if (prop in target) {
+//                 return Reflect.get(target, prop, receiver);
+//             } else {
+//                 throw new ReferenceError(`Нет свойства ${prop}`);
+//             } 
+//             // console.log(target);
+//             // console.log(prop);
+//         }
+//     });
+// }
+
+// user = wrap(user);
+
+// console.log(user.name);
+// console.log(user.age);
+
 
 
 // let userNoAsk = {
@@ -238,15 +310,72 @@
 // console.log(admin.name);
 
 
-let map = new Map();
+// let map = new Map();
 
-let proxyMap = new Proxy(map, {
+// let proxyMap = new Proxy(map, {
 
-    get(target, prop, receiver) {
-        let value = Reflect.get(target, prop, receiver);
-        return typeof value == 'function' ? value.bind(target) : value;
-    }
-});
+//     get(target, prop, receiver) {
+//         let value = Reflect.get(target, prop, receiver);
+//         return typeof value == 'function' ? value.bind(target) : value;
+//     }
+// });
 
-proxyMap.set('test', 1);
-console.log(proxyMap.get('test'));
+// proxyMap.set('test', 1);
+// console.log(proxyMap.get('test'));
+
+
+
+// class User {
+//     #name = 'User';
+
+//     getName() {
+//         return this.#name;
+//     }
+// }
+
+// let user = new User();
+// console.log(user);
+
+// user = new Proxy(user, {
+
+//     get(target, prop, receiver) {
+//         let value = Reflect.get(...arguments);
+//         return typeof value == 'function' ? value.bind(target) : value;
+//     }
+// });
+
+// console.log(user.getName);
+
+
+// let allUsers = new Set();
+
+// class User {
+//     constructor(name) {
+//         this.name = name;
+//         allUsers.add(this);
+//     }
+// }
+
+// let user = new User('Dim');
+// console.log(allUsers.has(user));
+
+// user = new Proxy(user, {});
+
+// console.log(allUsers.has(user));
+
+
+
+// let revokes = new WeakMap();
+
+// let obj = {
+//     data: 'BigData',
+// };
+
+// let { proxy, revoke } = Proxy.revocable(obj, {});
+
+// revokes.set(proxy, revoke);
+
+// revoke = revokes.get(proxy);
+// revoke();
+
+// console.log(proxy.data);
