@@ -1,3 +1,17 @@
+'use strict';
+
+let arr = [];
+let randNumber = Math.random()
+
+function loadArr(arr) {
+    
+    if (arr.lenght == 0) {
+        arr.push()
+    }
+} 
+
+
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // function ReadingСharacters(string) {
     
