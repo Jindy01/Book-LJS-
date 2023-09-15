@@ -1,12 +1,13 @@
 'use strict';
 
 let arr = [];
-let randNumber = Math.random()
 
 function loadArr(arr) {
+
+    let randNumber = Math.random()
     
     if (arr.lenght == 0) {
-        arr.push()
+        arr.push(randNumber);
     }
 } 
 
