@@ -1,15 +1,17 @@
 'use strict';
+// console.log('Hello ! I`m return !');
 
-let arr = [];
 
-function loadArr(arr) {
+// let arr = [];
 
-    let randNumber = Math.random()
+// function loadArr(arr) {
+
+//     let randNumber = Math.random()
     
-    if (arr.lenght == 0) {
-        arr.push(randNumber);
-    }
-} 
+//     if (arr.lenght == 0) {
+//         arr.push(randNumber);
+//     }
+// } 
 
 
 
