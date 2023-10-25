@@ -1,4 +1,17 @@
 'use strict';
+
+let x = [10, 2, 4, 5, 6];
+
+function sortArr(arr) {
+
+    arr.sort( function(a, b) {
+        return a - b; 
+    }) 
+    return arr
+}
+
+console.log(sortArr(x));
+
 // console.log('Hello ! I`m return !');
 
 
