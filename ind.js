@@ -1,5 +1,8 @@
 'use strict';
 
+
+let = 0;
+
 let x = [10, 2, 4, 5, 6];
 
 function sortArr(arr) {
