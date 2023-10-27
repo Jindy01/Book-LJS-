@@ -1,5 +1,6 @@
 'use strict';
 
+const goodNumb = 10;
 
 let = 0;
 
