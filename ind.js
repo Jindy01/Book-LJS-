@@ -1,20 +1,17 @@
 'use strict';
+let x = 0;
+let points = 1; 
+function point(x) {
 
-const goodNumb = 10;
-
-let = 0;
-
-let x = [10, 2, 4, 5, 6];
-
-function sortArr(arr) {
-
-    arr.sort( function(a, b) {
-        return a - b; 
-    }) 
-    return arr
+    if (points == 1 ) {
+        alert('Возвращайся - ждём - вперёд в будущее')
+    } else {
+        alert('Хех')
+    }
 }
 
-console.log(sortArr(x));
+
+point(points);
 
 // console.log('Hello ! I`m return !');
 
