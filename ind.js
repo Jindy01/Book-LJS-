@@ -1,4 +1,9 @@
 'use strict';
+
+const point = 0;
+
+
+
 let x = 0;
 let points = 1; 
 function point(x) {
