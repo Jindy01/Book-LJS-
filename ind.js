@@ -1,22 +1,12 @@
 'use strict';
 
-const point = 0;
+let arr = [1, 3, 5, 9];
 
+function reverceArr(arr) {
 
-
-let x = 0;
-let points = 1; 
-function point(x) {
-
-    if (points == 1 ) {
-        alert('Возвращайся - ждём - вперёд в будущее')
-    } else {
-        alert('Хех')
-    }
+    arr.re
 }
 
-
-point(points);
 
 // console.log('Hello ! I`m return !');
 
