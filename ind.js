@@ -8,6 +8,8 @@ function reverceArr(arr) {
 }
 
 
+let x = ss;
+
 let point = 1;
 // console.log('Hello ! I`m return !');
 
